@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function NavBar() {
 	return (
-		<div className="flex items-center w-full sticky top-0 z-10 bg-white bg-opacity-95 border-b border-b-gray-200">
+		<div className="flex items-center w-full sticky top-0 z-10 bg-gradient-to-t from-white via-gray-100/95 to-white bg-opacity-95 border-b border-b-gray-200">
 			<div className="mx-4 my-2.5 justify-between flex items-center w-full">
 				<Link className="flex items-center" href={'/'}>
 					<Image

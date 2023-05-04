@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Link from 'next/link'
 import NavBar from '../components/NavBar'
 import Image from 'next/image'
+import Footer from '../components/Footer'
+import HeroSection from '../components/HeroSection'
 
 export default function Home() {
 	return (
@@ -19,39 +21,8 @@ export default function Home() {
 			</Head>
 
 			<NavBar />
-
-			<div className="relative">
-				<div className="absolute top-96 mt-20 rotate-45 rounded-full w-4/12 h-4 bg-indigo-300 blur-3xl"></div>
-				<div className="absolute top-96 rotate-45 -left-1 rounded-full w-6/12 h-5 bg-fuchsia-300 blur-3xl"></div>
-				<div className="absolute top-96 rotate-45 left-32 rounded-full w-5/6 h-4 bg-sky-300 blur-2xl"></div>
-				<div className="absolute top-60 rotate-45 right-0 rounded-full w-2/6 h-8 bg-indigo-300 blur-3xl"></div>
-			</div>
-
-			<div className="relative flex justify-center">
-				<div className="absolute w-[720px] h-[720px] border border-gray-300 rounded-full top-4"></div>
-				<div className="absolute w-[950px] h-[950px] border border-gray-300 rounded-full -top-24"></div>
-				<div className="absolute w-[1190px] h-[1190px] border border-gray-300 rounded-full -top-[212px]"></div>
-			</div>
-
-			<div className="relative w-full h-full">
-				<div className="absolute w-6/12 h-3/6 text-center top-48 left-1/4">
-					<div className="flex-col h-full">
-						<h1 className="font-bold text-[58px] leading-none tracking-tight text-gray-800 mt-12 mb-10">
-							Change the world
-							<br /> with codedamn
-						</h1>
-						<h2 className="text-xl font-medium text-gray-500 mb-16 leading-relaxed">
-							Learn coding with your personal AI powered tutor and 100+ interactive
-							courses. Become job ready 10x faster.
-						</h2>
-						<button className="text-lg font-semibold text-white bg-indigo-600 rounded-lg py-3.5 px-7 mb-12">
-							Begin your coding journey &rarr;
-						</button>
-					</div>
-				</div>
-			</div>
-
-			<div className="relative w-full text-center pt-6 pb-6 bg-white/50">
+			<HeroSection />
+			<div className="relative w-full text-center pt-6 pb-6 bg-white/50 ">
 				<p className="font-bold text-sm uppercase tracking-widest text-gray-600 ">
 					Powering over 252K developers to land their dream job
 				</p>
@@ -60,7 +31,7 @@ export default function Home() {
 						<svg
 							xmlnsXlink="http://www.w3.org/1999/xlink"
 							xmlns="http://www.w3.org/2000/svg"
-							className="w-[160px] h-[42px] mx-4 text-gray-600"
+							className="w-[160px] h-[42px] mx-4 fill-zinc-600"
 							width="200"
 							height="80"
 						>
@@ -68,7 +39,6 @@ export default function Home() {
 								<symbol
 									xmlns="http://www.w3.org/2000/svg"
 									id="google"
-									fill="currentColor"
 									viewBox="0 0 103 33"
 								>
 									<path d="M13 0h1c3 0 6.2 1.3 8.4 3.5L20 6A9.4 9.4 0 0 0 8.4 5a9.4 9.4 0 0 0-2 13.8c1.7 2 4.2 3.2 6.7 3.3a9 9 0 0 0 6.7-2.3c1.4-1.1 2-3 2.2-4.7h-8.5v-3.4h12c.6 3.7-.3 8-3.2 10.6-2 2-4.6 3-7.3 3.2a13.1 13.1 0 0 1-13.8-8.4A12.4 12.4 0 0 1 6 2.5C7.9 1 10.5.2 13 0Zm68.7.9h3.7V25h-3.7V.9ZM33.6 9.3c2.3-.4 4.7 0 6.6 1.4a8.3 8.3 0 0 1 1.6 11.9 8.4 8.4 0 0 1-7 3 8.4 8.4 0 0 1-6.3-3.3 8.4 8.4 0 0 1-1.2-7.7 8.1 8.1 0 0 1 6.3-5.3Zm.5 3.2c-1 .2-1.8.8-2.4 1.5-1.6 2-1.5 5.2.3 7a4.6 4.6 0 0 0 7.2-1c1.2-2 .9-4.9-.9-6.4a4.7 4.7 0 0 0-4.2-1.1Zm17.7-3.2c2.5-.5 5.4.2 7.3 2 3.2 2.8 3.5 8 .8 11.3a8.4 8.4 0 0 1-6.9 3 8.3 8.3 0 0 1-6.4-3.3 8.5 8.5 0 0 1-1-7.9 8.1 8.1 0 0 1 6.2-5.1Zm.5 3.2c-1 .2-1.8.8-2.4 1.5-1.7 2-1.6 5 .2 7a4.6 4.6 0 0 0 7.3-1c1.1-2 .8-4.9-1-6.4a4.6 4.6 0 0 0-4.1-1.1Z"></path>
@@ -80,7 +50,7 @@ export default function Home() {
 						<svg
 							xmlnsXlink="http://www.w3.org/1999/xlink"
 							xmlns="http://www.w3.org/2000/svg"
-							className="w-[160px] h-[42px] mx-4 text-gray-600"
+							className="w-[160px] h-[42px] mx-4 fill-zinc-600"
 							width="200"
 							height="80"
 						>
@@ -88,7 +58,6 @@ export default function Home() {
 								<symbol
 									xmlns="http://www.w3.org/2000/svg"
 									id="apple"
-									fill="currentColor"
 									viewBox="0 0 106 36"
 								>
 									<path d="M24.6 19.1c0-4.5 3.7-6.7 3.9-6.8a8.4 8.4 0 0 0-6.6-3.6c-2.8-.3-5.5 1.7-7 1.7-1.3 0-3.5-1.7-5.9-1.6-3 0-5.8 1.8-7.4 4.5C-1.6 18.8.8 27 3.9 31.4c1.5 2.2 3.3 4.7 5.6 4.6 2.3 0 3.2-1.5 6-1.5 2.7 0 3.5 1.5 5.9 1.5 2.4-.1 4-2.3 5.5-4.5 1.7-2.5 2.4-5 2.5-5.1 0 0-4.8-1.8-4.8-7.3ZM20 5.8A8 8 0 0 0 22 0a8 8 0 0 0-5.3 2.7 7.5 7.5 0 0 0-2 5.6c2.1.2 4.2-1 5.4-2.5m20.3 17.8-2 6.3h-2.7l6.8-20h3.1l6.9 20h-2.8l-2.1-6.3h-7.2Zm6.6-2-2-5.8-1-3.7-1 3.7-2 5.8h6Zm7.5-1.4-.1-4.7h2.3L57 18c1-1.8 2.8-2.8 5.1-2.8 3.5 0 6.1 3 6.1 7.3 0 5.2-3.1 7.8-6.5 7.8a5 5 0 0 1-4.4-2.3H57v7.8h-2.6V20.2Zm2.6 3.9.1 1a4 4 0 0 0 4 3.1c2.7 0 4.3-2.3 4.3-5.6 0-2.9-1.5-5.3-4.3-5.3a4.2 4.2 0 0 0-4 3.2v3.6H57Zm13.8-3.9-.2-4.7h2.4l.1 2.5a5.7 5.7 0 0 1 5.2-2.8c3.5 0 6.1 3 6.1 7.3 0 5.2-3.2 7.8-6.6 7.8a5 5 0 0 1-4.4-2.3v7.8h-2.6V20.2Zm2.6 3.9v1a4 4 0 0 0 4 3.1c2.8 0 4.4-2.3 4.4-5.6 0-2.9-1.5-5.3-4.3-5.3a4.2 4.2 0 0 0-4 3.2l-.1 1v2.6ZM87.2 8.8h2.6v21.1h-2.6V8.8Zm8 14.4c0 3.5 2.2 5 4.8 5 2 0 3-.3 4-.7l.5 1.8c-1 .4-2.5 1-4.8 1-4.4 0-7.1-3-7.1-7.3 0-4.4 2.6-7.8 6.8-7.8 4.7 0 6 4.1 6 6.8l-.2 1.2h-10Zm7.6-1.9c0-1.7-.7-4.2-3.6-4.2-2.7 0-3.9 2.4-4 4.2h7.6Z"></path>
@@ -99,7 +68,7 @@ export default function Home() {
 						<svg
 							xmlnsXlink="http://www.w3.org/1999/xlink"
 							xmlns="http://www.w3.org/2000/svg"
-							className="w-[160px] h-[36px] mx-4 text-gray-600"
+							className="w-[160px] h-[36px] mx-4 fill-zinc-600"
 							width="200"
 							height="80"
 						>
@@ -107,7 +76,6 @@ export default function Home() {
 								<symbol
 									xmlns="http://www.w3.org/2000/svg"
 									id="meta"
-									fill="currentColor"
 									viewBox="0 0 115 23"
 								>
 									<path d="M42.4.7h4.3L54.1 14 61.5.7h4.2v21.9h-3.5V5.8l-6.5 11.6h-3.3L45.9 5.8v16.8h-3.5V.7ZM77 23c-1.6 0-3-.4-4.2-1.1a7.6 7.6 0 0 1-3-3 10.5 10.5 0 0 1 0-8.9 7.6 7.6 0 0 1 7-4c1.6 0 2.9.3 4 1s2 1.8 2.6 3.1c.6 1.3 1 2.9 1 4.7v1h-12c.1 1.3.7 2.3 1.5 3 .9.8 2 1.2 3.3 1.2 1 0 2-.1 2.7-.5a7 7 0 0 0 2.2-1.4l1.8 2.3a9.8 9.8 0 0 1-6.8 2.6Zm2.7-13a3.9 3.9 0 0 0-3-1.1 4 4 0 0 0-2.9 1.1c-.8.8-1.3 1.8-1.5 3.1H81a4.9 4.9 0 0 0-1.2-3Zm8.9-.8h-3.3V6.3h3.3V1.5H92v4.8h5v2.9h-5v7.3c0 1.2.2 2.1.6 2.6.4.5 1.1.8 2.2.8a10 10 0 0 0 2.1-.2v2.9a9.6 9.6 0 0 1-2.8.4c-3.7 0-5.5-2-5.5-6V9.1Zm26.1 13.4h-3.4v-2.3a6 6 0 0 1-2.2 2c-1 .5-2 .7-3.2.7a7 7 0 0 1-3.8-1.1c-1-.7-2-1.8-2.6-3a10.6 10.6 0 0 1 0-8.9 7.1 7.1 0 0 1 6.6-4.1 6 6 0 0 1 3 .7 6 6 0 0 1 2.2 1.8V6.3h3.4v16.3ZM111.3 12a4.6 4.6 0 0 0-4.5-3c-1.4 0-2.6.5-3.5 1.5-.8 1-1.3 2.3-1.3 4 0 1.6.5 3 1.3 4 .8.9 2 1.4 3.4 1.4 1 0 2-.3 2.8-.8.8-.6 1.4-1.3 1.8-2.2V12Zm-107 3.2c0 1.3.2 2.3.6 3 .5.7 1.3 1 2 1 1 0 1.9-.2 3.6-2.6 1.4-1.9 3-4.5 4.1-6.2l1.9-2.9c1.2-2 2.7-4.1 4.4-5.6A6.8 6.8 0 0 1 25.3 0c2.6 0 5 1.5 6.8 4.2 2 3 3 6.9 3 10.8 0 2.3-.4 4-1.2 5.4a5.2 5.2 0 0 1-4.7 2.6v-3.7c2.1 0 2.6-2 2.6-4.2 0-3.2-.7-6.7-2.3-9.3C28.3 4.1 26.8 3 25.2 3c-1.8 0-3.3 1.3-4.9 3.7l-2.7 4.6-1.1 2a48.7 48.7 0 0 1-3.9 6.2C10.7 22 9.1 23 7 23a5.6 5.6 0 0 1-5.2-2.8A10 10 0 0 1 .5 15l3.8.2Z"></path>
@@ -120,7 +88,7 @@ export default function Home() {
 						<svg
 							xmlnsXlink="http://www.w3.org/1999/xlink"
 							xmlns="http://www.w3.org/2000/svg"
-							className="w-[160px] h-[42px] mx-4 text-gray-600"
+							className="w-[160px] h-[42px] mx-4 fill-zinc-600"
 							width="200"
 							height="80"
 						>
@@ -128,7 +96,6 @@ export default function Home() {
 								<symbol
 									xmlns="http://www.w3.org/2000/svg"
 									id="microsoft"
-									fill="currentColor"
 									viewBox="0 0 160 34"
 								>
 									<path d="M66.3 6.8v20.4h-3.5v-16l-6.4 16H54l-6.4-16v16h-3.4V6.8h5.1l5.9 15.1h.1l6.2-15.1h4.8Zm3 1.6c0-.6.1-1 .5-1.5a3 3 0 0 1 1.5-.5 2 2 0 0 1 1.5.5 2 2 0 0 1 0 2.9c-.4.4-.9.5-1.5.5a2 2 0 0 1-1.5-.5c-.3-.4-.6-1-.6-1.4Zm3.8 4.2v14.6h-3.5V12.6h3.5Zm10.4 12.1c.5 0 1-.1 1.7-.4.6-.2 1.2-.5 1.7-1v3.3a6 6 0 0 1-1.9.7l-2.3.2a7 7 0 0 1-7.3-7.2c0-2.4.7-4.3 2-5.8a8 8 0 0 1 6-2.3 8.7 8.7 0 0 1 3.4.8v3.3c-.5-.3-1-.7-1.6-.9-.5-.1-1.1-.3-1.7-.3-1.3 0-2.4.4-3.3 1.3A5 5 0 0 0 79 20c0 1.5.4 2.7 1.2 3.5.8.8 2 1.2 3.3 1.2Zm13.2-12.4a3.8 3.8 0 0 1 1.3.2V16l-.8-.4-1.3-.2c-.8 0-1.6.4-2.1 1.1a5 5 0 0 0-1 3.3v7.4h-3.4V12.6H93v2.3c.4-.8.8-1.4 1.4-2a6 6 0 0 1 2.4-.6Zm1.5 7.8a8 8 0 0 1 2-5.7 7.5 7.5 0 0 1 5.7-2.2 7 7 0 0 1 5.3 2 8 8 0 0 1 2 5.6 8 8 0 0 1-2 5.7 7.4 7.4 0 0 1-5.7 2c-2.2 0-4-.6-5.3-2a7.6 7.6 0 0 1-2-5.4Zm3.6-.1c0 1.5.3 2.7 1 3.5.7.8 1.7 1.2 3 1.2 1.2 0 2.2-.4 2.9-1.2.6-.8 1-2 1-3.6s-.4-2.8-1-3.6a3.5 3.5 0 0 0-2.9-1.2c-1.3 0-2.2.4-2.9 1.2-.8 1-1.1 2.1-1.1 3.7Zm16.5-3.6c0 .5.1 1 .5 1.2.3.3 1 .6 2 1 1.4.6 2.4 1.2 3 1.9.5.7.8 1.5.8 2.5a4 4 0 0 1-1.6 3.3c-1 .9-2.5 1.2-4.3 1.2a11.2 11.2 0 0 1-4-.8v-3.4c.7.5 1.4.8 2 1 .8.3 1.5.4 2 .4.8 0 1.4 0 1.8-.3.3-.2.5-.6.5-1 0-.5-.2-1-.5-1.3l-2.2-1.1a6.5 6.5 0 0 1-2.7-1.8 4 4 0 0 1-.8-2.6 4 4 0 0 1 1.6-3.2c1-.9 2.4-1.3 4-1.3a19 19 0 0 1 3.3.6v3.4l-1.6-.8a5 5 0 0 0-1.8-.4 3 3 0 0 0-1.5.4c-.3.3-.5.7-.5 1.1Zm7.7 3.7a8 8 0 0 1 2-5.7 7.5 7.5 0 0 1 5.7-2.2 7 7 0 0 1 5.4 2c1.2 1.4 2 3.3 2 5.6a8 8 0 0 1-2.1 5.7 7.4 7.4 0 0 1-5.6 2 7 7 0 0 1-5.4-2 7.8 7.8 0 0 1-2-5.4Zm3.6-.1c0 1.5.4 2.7 1 3.5a4 4 0 0 0 3 1.2c1.3 0 2.3-.4 3-1.2.6-.8 1-2 1-3.6s-.4-2.8-1-3.6a3.5 3.5 0 0 0-3-1.2c-1.2 0-2.1.4-2.8 1.2-.8 1-1.2 2.1-1.2 3.7Zm22.9-4.6h-5.2v11.8h-3.5V15.4h-2.4v-2.8h2.4v-2c0-1.6.6-2.9 1.5-3.8 1-1 2.3-1.5 3.9-1.5h1.1l.9.2v3l-.7-.2-1-.2c-.7 0-1.2.3-1.6.7-.4.4-.6 1.1-.6 2v1.7h5.2V9.2l3.4-1v4.3h3.5v2.8H156v6.9c0 .9.2 1.5.5 1.9.3.4.8.6 1.6.6l.7-.2c.3 0 .5-.2.7-.3V27c-.3.2-.6.2-1.1.3l-1.5.2c-1.5 0-2.6-.4-3.3-1.1-.7-.8-1-2-1-3.5v-7.5ZM16.1 0H0v16.1h16.1V0ZM34 0H17.8v16.1H34V0ZM16.1 17.9H0V34h16.1V17.9Zm17.9 0H17.8V34H34V17.9Z"></path>
@@ -141,7 +108,7 @@ export default function Home() {
 						<svg
 							xmlnsXlink="http://www.w3.org/1999/xlink"
 							xmlns="http://www.w3.org/2000/svg"
-							className="w-[160px] h-[34px] mx-4 text-gray-600"
+							className="w-[160px] h-[34px] mx-4 fill-zinc-600"
 							width="200"
 							height="80"
 						>
@@ -149,7 +116,6 @@ export default function Home() {
 								<symbol
 									xmlns="http://www.w3.org/2000/svg"
 									id="netflix"
-									fill="currentColor"
 									viewBox="0 0 126 35"
 								>
 									<path d="M83.8 0v25.5l9.1.5v5.4a434 434 0 0 0-14.4-.7V0h5.3ZM126 0l-7 16.6 7 18.4-6-.8-4-10.4-3.9 9.4-5.5-.6 6.7-16.1L107.1 0h5.8l3.4 9.2 3.9-9.2h5.8ZM60.3 30.4V0h14.8v5.5h-9.5v7h7.2V18h-7.2v12.5h-5.3Zm-19.8-25V0h16.4v5.5h-5.5v25l-5.3.2V5.5h-5.6Zm-18.1 27V0H37v5.5h-9.4v7.3h7.1v5.4h-7.1v8.2l9.4-.6v5.4c-5 .3-9.8.6-14.7 1.1ZM12 19.8V0h5.3v32.8l-5.8.7-6.2-18.3v19L0 35V0h5l7 19.8Zm85.3 12V0h5.3v32.2l-5.3-.4Z"></path>
@@ -160,7 +126,7 @@ export default function Home() {
 						<svg
 							xmlnsXlink="http://www.w3.org/1999/xlink"
 							xmlns="http://www.w3.org/2000/svg"
-							className="w-[160px] h-[42px] mx-4 text-gray-600"
+							className="w-[160px] h-[42px] mx-4 fill-zinc-600"
 							width="200"
 							height="80"
 						>
@@ -168,7 +134,6 @@ export default function Home() {
 								<symbol
 									xmlns="http://www.w3.org/2000/svg"
 									id="amazon"
-									fill="currentColor"
 									viewBox="0 0 113 34"
 								>
 									<path d="M70 26.6a43.9 43.9 0 0 1-53.9-3.9c-.6-.6 0-1.3.7-.9a59.6 59.6 0 0 0 52.3 3.3c1-.5 2 .7 1 1.5Z"></path>
@@ -180,7 +145,7 @@ export default function Home() {
 						<svg
 							xmlnsXlink="http://www.w3.org/1999/xlink"
 							xmlns="http://www.w3.org/2000/svg"
-							className="w-[160px] h-[42px] mx-4 text-gray-600"
+							className="w-[160px] h-[42px] mx-4 fill-zinc-600"
 							width="200"
 							height="80"
 						>
@@ -188,7 +153,6 @@ export default function Home() {
 								<symbol
 									xmlns="http://www.w3.org/2000/svg"
 									id="adobe"
-									fill="currentColor"
 									viewBox="0 0 134 35"
 								>
 									<path d="M15.5 0H1v35L15.5 0Zm10.3 0h14.6v35L25.8 0Zm-5.1 12.9L30 35h-6.1L21 28h-6.8l6.4-15.1Zm43.6 9.4 1.7 5h3.7c.1 0 .2 0 .1-.2L63 8.1c0-.2 0-.2-.2-.2h-4.1c-.2 0-.2 0-.2.2 0 1-.2 1.3-.3 1.6l-6.1 17.4c0 .2 0 .3.2.3h3c.2 0 .2 0 .3-.3l1.6-4.8h7.1ZM58.2 19l2.5-8.1 2.7 8.1h-5.2Zm20.5 8.7a14 14 0 0 0 5.6-1.2l.1-.2V6.4l-.2-.1h-3.3l-.1.2v6h-1.3c-5.2 0-8.4 3.4-8.4 7.7 0 5 3.3 7.5 7.6 7.5Zm2-3.3-1.7.2c-2.3 0-4.3-1.3-4.3-4.6 0-2.8 2-4.5 4.7-4.5.5 0 1 0 1.4.2v8.7Zm14.1-11.9c-4.5 0-7.3 3.4-7.3 7.6 0 3.8 2.2 7.6 7.2 7.6 4.2 0 7.1-3.1 7.1-7.7 0-4-2.5-7.5-7-7.5Zm-.2 3c2.5 0 3.6 2.1 3.6 4.6 0 3-1.6 4.6-3.4 4.6-2.3 0-3.6-2-3.6-4.7 0-2.8 1.4-4.5 3.4-4.5Zm10.6-9.2c-.2 0-.3 0-.3.2v20.3s.1.2.3.2c1.4.5 2.9.7 4.4.7 4.4 0 8.7-2.7 8.7-8.2 0-4-2.8-7-7-7-1 0-2 .1-2.7.4V6.5c0-.2-.1-.2-.3-.2h-3.1Zm9.4 13.5c0 3.3-2.2 4.9-4.7 4.9-.5 0-1 0-1.3-.2V16c.4-.2 1-.4 2-.4 2.4 0 4 1.5 4 4.3Zm15.7 1.1 3-.1c.2 0 .3-.1.3-.2l.1-1.9c0-2.8-1.7-6.2-6-6.2-4.5 0-7 3.6-7 7.7 0 3.7 2 7.5 7.3 7.5 2 0 3.3-.3 4.5-.9l.1-.3V24c0-.1 0-.1-.1 0-1.2.4-2.4.6-3.7.6-3 0-4.4-1.6-4.5-3.7h6Zm-6-2.6c.2-1.4 1.2-3 3.2-3 2.3 0 2.9 2 2.9 2.8v.2h-6.1Z"></path>
@@ -199,7 +163,7 @@ export default function Home() {
 						<svg
 							xmlnsXlink="http://www.w3.org/1999/xlink"
 							xmlns="http://www.w3.org/2000/svg"
-							className="w-[160px] h-[46px] mx-4 text-gray-600"
+							className="w-[160px] h-[46px] mx-4 fill-zinc-600"
 							width="200"
 							height="80"
 						>
@@ -207,7 +171,6 @@ export default function Home() {
 								<symbol
 									xmlns="http://www.w3.org/2000/svg"
 									id="notion"
-									fill="currentColor"
 									viewBox="0 0 154 54"
 								>
 									<path d="M32.8.1 3.2 2.3C.8 2.5 0 4.1 0 6v32.8c0 1.4.5 2.7 1.8 4.4l7 9.1c1 1.5 2.1 1.8 4.3 1.7l34.3-2.1c3-.2 3.8-1.6 3.8-3.9V11.1c0-1.1-.5-1.5-1.9-2.5l-.2-.2-9.5-6.7C37.4 0 36.4-.2 32.8.1Zm-19 10.4c-2.8.2-3.4.3-5-1l-4-3.3c-.4-.4-.2-1 .8-1L34 3a6 6 0 0 1 4.6 1.3L43.5 8c.2.1.7.7 0 .7l-29.3 1.8H14Zm-3.2 37.2V16.4c0-1.4.4-2 1.6-2.1l33.8-2c1.1-.1 1.6.6 1.6 2v31c0 1.4-.2 2.6-2 2.7l-32.3 1.9c-1.9 0-2.7-.5-2.7-2.2ZM42.4 18c.2 1 0 1.9-.9 2l-1.6.3v23a8 8 0 0 1-3.6 1.2c-1.6 0-2-.5-3.3-2L22.8 26.3V42l3.2.7s0 2-2.6 2l-7.1.4c-.2-.5 0-1.5.7-1.7l1.9-.5V22.2l-2.6-.2c-.2-1 .3-2.3 1.8-2.5l7.6-.5 10.6 16.4V20.9l-2.7-.3c-.2-1.2.6-2 1.7-2.1l7.1-.4Zm31.4 20.2V24h.3l10.1 14.3h3.2v-21H84v14.3h-.3L73.5 17.3h-3.3v21h3.6Zm23.7.3c4.7 0 7.5-3.1 7.5-8.3 0-5.1-2.8-8.2-7.5-8.2s-7.6 3.1-7.6 8.2c0 5.2 2.9 8.3 7.6 8.3Zm0-3c-2.5 0-4-2-4-5.3s1.5-5.2 4-5.2c2.4 0 3.9 2 3.9 5.2 0 3.3-1.4 5.3-4 5.3Zm10.8-17.1v4h-2.5v2.9h2.5V34c0 3 1.4 4.3 5 4.3l1.9-.1v-2.9l-1.2.1c-1.5 0-2.2-.7-2.2-2.3v-7.7h3.4v-3h-3.4v-3.9h-3.5Zm9 19.8h3.6v-16h-3.6v16Zm1.8-18.5c1.2 0 2.1-1 2.1-2.2 0-1.2-1-2.2-2.1-2.2-1.2 0-2.1 1-2.1 2.2 0 1.2 1 2.2 2 2.2Zm11.5 18.8c4.7 0 7.5-3.1 7.5-8.3 0-5.1-2.8-8.2-7.5-8.2s-7.6 3.1-7.6 8.2c0 5.2 2.9 8.3 7.6 8.3Zm0-3c-2.5 0-4-2-4-5.3s1.5-5.2 4-5.2 3.9 2 3.9 5.2c0 3.3-1.4 5.3-4 5.3Zm9.7 2.7h3.5V29c0-2.3 1.3-3.8 3.5-3.8 2.1 0 3.1 1.2 3.1 3.6v9.5h3.6V28c0-3.8-2-6-5.4-6-2.4 0-4 1.2-4.7 3h-.2v-2.6h-3.4v15.9Z"></path>
@@ -219,17 +182,106 @@ export default function Home() {
 				</div>
 			</div>
 
-			<div className="relative w-full h-[780px] border-t border-gray-200">
+			<div className="w-full h-[730px] border-t border-gray-200 bg-gray-50/75 py-20 px-6">
+				<div className="h-full">
+					<h4 className="uppercase text-center text-base font-bold tracking-widest text-gray-500 mb-6">
+						Begin your journey with codedamn
+					</h4>
+					<div className="w-full h-full flex pt-10 pb-20">
+						<div className="w-3/6"></div>
+						<div className="w-3/6 bg-white mr-12 border border-gray-200 rounded-2xl p-20">
+							<div className="px-5 h-full flex flex-col gap-4">
+								<button className="w-full bg-gray-50/75 flex items-center justify-center border border-gray-300 rounded-lg p-3 text-base font-medium">
+									<svg
+										className=" mr-3 h-5 w-5"
+										aria-hidden="true"
+										preserveAspectRatio="xMidYMid"
+										viewBox="0 0 256 262"
+									>
+										<path
+											fill="#4285F4"
+											d="M256 133c0-10-1-18-3-26H131v48h71c-1 12-9 30-26 43v1l38 30h3c25-22 39-56 39-96"
+										></path>
+										<path
+											fill="#34A853"
+											d="M131 261c35 0 64-12 86-32l-41-31a80 80 0 0 1-120-42l-1 1-41 31v1c21 43 65 72 117 72"
+										></path>
+										<path
+											fill="#FBBC05"
+											d="M56 156a80 80 0 0 1 0-51v-2L15 71l-1 1a131 131 0 0 0 0 117l42-33"
+										></path>
+										<path
+											fill="#EB4335"
+											d="M131 50c24 0 41 11 50 20l37-36A130 130 0 0 0 14 72l42 33c11-32 40-55 75-55"
+										></path>
+									</svg>
+									Continue with Google
+								</button>
+								<button className="w-full bg-zinc-900 text-white flex items-center justify-center border border-gray-300 rounded-lg p-3 text-base font-medium">
+									<svg
+										className=" mr-3 h-5 w-5"
+										preserveAspectRatio="xMidYMid"
+										viewBox="0 0 256 250"
+									>
+										<path
+											fill="#FFF"
+											d="M128 0a128 128 0 0 0-40 249c6 2 8-2 8-6v-24c-36 8-43-15-43-15-6-14-14-18-14-18-12-8 1-8 1-8 12 1 19 13 19 13 12 20 30 14 38 11 1-9 4-14 8-17-29-4-59-15-59-64 0-14 5-25 14-34-2-3-6-16 1-34 0 0 11-3 35 13a123 123 0 0 1 64 0c24-16 35-13 35-13 7 18 3 31 1 34 9 9 14 20 14 34 0 49-30 60-59 63 5 4 9 12 9 24v35c0 4 2 8 9 6A128 128 0 0 0 128 0zM48 182l-2 1-1-2 2-1 1 2zm6 6-2-1-1-2h3v3zm5 7c-1 1-3 0-3-1v-3c1-1 2 0 3 1v3zm7 8h-3c-2-1-2-3-1-3h3l1 3zm9 3c0 1-1 2-3 1l-2-2c0-1 2-2 3-1 2 0 3 1 2 2zm11 1c0 2-1 2-3 2l-2-1c0-2 1-2 2-2l3 1zm11 0c0 1-1 2-3 2-1 1-3 0-3-1s1-2 3-2c1-1 2 0 3 1z"
+										></path>
+									</svg>
+									Continue with Github
+								</button>
+								<div className="relative h-6 flex flex-col justify-center my-2">
+									<div className="w-full border-t border-gray-200"></div>
+									<div className="absolute w-full flex justify-center items-center ">
+										<span className="text-sm px-2 bg-white text-gray-500">
+											or register with email
+										</span>
+									</div>
+								</div>
+								<div className="flex flex-col gap-4">
+									<form action="">
+										<input
+											type="email"
+											className="w-full bg-white border border-gray-300 rounded-md px-3 py-2.5 text-base font-normal placeholder:text-gray-600 focus:outline-indigo-600"
+											placeholder="Your email here"
+										/>
+									</form>
+									<button className="w-full bg-indigo-600 text-white flex items-center justify-center border border-gray-300 rounded-lg p-3 text-base font-medium">
+										<svg
+											stroke="currentColor"
+											fill="currentColor"
+											stroke-width="0"
+											viewBox="0 0 16 16"
+											className="-ml-0.5 mr-2.5 h-5 w-5"
+											aria-hidden="true"
+											height="1em"
+											width="1em"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"></path>
+										</svg>
+										Continue with Email
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div className="relative w-full h-[760px] flex justify-center items-center border-t border-gray-200">
 				<div className="absolute top-96 rotate-45 -left-5 rounded-full w-4/12 h-5 bg-fuchsia-300 blur-3xl"></div>
-				<div className="absolute top-96 rotate-45 left-32 rounded-full w-4/6 h-4 bg-sky-300 blur-2xl"></div>
+				<div className="absolute bottom-64 rotate-45 -left-5 rounded-full w-4/12 h-5 bg-fuchsia-300 blur-3xl"></div>
+				<div className="absolute top-96 rotate-45 left-32 rounded-full w-5/6 h-4 bg-sky-300 blur-2xl"></div>
 
 				<div className="relative flex justify-between h-full py-20 px-6">
-					<div className="w-6/12">
-						<div className="absolute w-[480px] h-[480px] border border-gray-300 rounded-full top-[170px] left-[80px]"></div>
-						<div className="absolute w-[590px] h-[590px] border border-gray-300 rounded-full"></div>
+					<div className="w-6/12 flex justify-center items-center">
+						<div className="absolute flex justify-center items-center w-[590px] h-[590px] border border-gray-300 rounded-full">
+							<div className="absolute w-[470px] h-[470px] border border-gray-300 rounded-full"></div>
+						</div>
 						<div className="absolute bottom-12 left-6 rounded-full w-7/12 h-60 bg-white blur-2xl"></div>
 						<div className="absolute bottom-20 left-64 rounded-full w-1/12 h-5 bg-sky-300 blur-3xl"></div>
-						<div className="absolute bottom-20 left-80 rounded-full w-3/12 h-5 bg-fuchsia-300 blur-3xl"></div>
+						<div className="absolute bottom-20 left-80 rounded-full -rotate-[10deg] w-4/12 h-4 bg-fuchsia-300 blur-3xl"></div>
 						<Image
 							src={'/mobile-mockup.png'}
 							alt={''}
@@ -238,8 +290,9 @@ export default function Home() {
 							className="absolute"
 						/>
 					</div>
+
 					<div className="relative w-6/12 flex-col py-32 px-12">
-						<div className="absolute top-24 left-12 mt-20 rotate-45 rounded-full w-[600px] h-7 bg-indigo-300 blur-3xl "></div>
+						<div className="absolute top-28 left-12 mt-20 rotate-[35deg] rounded-full w-[600px] h-7 bg-indigo-300 blur-3xl "></div>
 						<h3 className="text-4xl font-bold text-gray-900 tracking-tight">
 							All of codedamn at your fingertips.
 						</h3>
@@ -295,8 +348,8 @@ export default function Home() {
 										></path>
 										<path
 											stroke="#fff"
-											stroke-miterlimit="10"
-											stroke-width="0.2"
+											strokeMiterlimit="10"
+											strokeWidth="0.2"
 											d="M47.418 10.243c0 .838-.248 1.505-.745 2.003-.564.592-1.3.888-2.204.888-.866 0-1.603-.3-2.208-.9-.606-.6-.909-1.345-.909-2.233 0-.889.303-1.633.91-2.233.604-.6 1.341-.9 2.207-.9.43 0 .841.083 1.231.25.391.168.704.391.938.67l-.527.528c-.397-.475-.944-.712-1.643-.712-.632 0-1.178.222-1.639.666-.461.444-.69 1.021-.69 1.73 0 .71.229 1.286.69 1.73a2.282 2.282 0 001.639.666c.67 0 1.23-.223 1.676-.67.29-.29.458-.696.503-1.215h-2.179v-.72h2.907c.03.156.043.307.043.452zM52.028 7.737h-2.732V9.64h2.464v.721h-2.464v1.902h2.732V13h-3.503V7h3.503v.737zM55.279 13h-.771V7.737h-1.676V7h4.123v.737h-1.676V13zM59.938 13V7h.771v6h-.771zM64.128 13h-.77V7.737H61.68V7h4.123v.737h-1.676V13zM73.609 12.225c-.59.606-1.323.91-2.2.91-.877 0-1.61-.304-2.2-.91-.59-.606-.883-1.348-.883-2.225s.294-1.619.884-2.225c.589-.606 1.322-.91 2.199-.91.872 0 1.604.305 2.196.914.592.61.888 1.35.888 2.221 0 .877-.295 1.62-.884 2.225zm-3.83-.503a2.2 2.2 0 001.63.674c.643 0 1.187-.225 1.63-.674.444-.45.667-1.024.667-1.722s-.223-1.272-.667-1.722a2.199 2.199 0 00-1.63-.674c-.643 0-1.186.225-1.63.674-.443.45-.666 1.024-.666 1.722s.223 1.272.666 1.722zM75.575 13V7h.938l2.916 4.667h.033l-.033-1.156v-3.51h.77v6h-.804l-3.051-4.895h-.033l.033 1.156V13h-.77z"
 										></path>
 										<g filter="url(#filter0_ii_2092_139931)">
@@ -334,11 +387,11 @@ export default function Home() {
 												height="25.721"
 												x="9.973"
 												y="7.141"
-												color-interpolation-filters="sRGB"
+												colorInterpolationFilters="sRGB"
 												filterUnits="userSpaceOnUse"
 											>
 												<feFlood
-													flood-opacity="0"
+													floodOpacity="0"
 													result="BackgroundImageFix"
 												></feFlood>
 												<feBlend
@@ -387,11 +440,11 @@ export default function Home() {
 												height="12.86"
 												x="10.436"
 												y="20.001"
-												color-interpolation-filters="sRGB"
+												colorInterpolationFilters="sRGB"
 												filterUnits="userSpaceOnUse"
 											>
 												<feFlood
-													flood-opacity="0"
+													floodOpacity="0"
 													result="BackgroundImageFix"
 												></feFlood>
 												<feBlend
@@ -425,12 +478,12 @@ export default function Home() {
 												y2="25.491"
 												gradientUnits="userSpaceOnUse"
 											>
-												<stop stop-color="#00A0FF"></stop>
-												<stop offset="0.007" stop-color="#00A1FF"></stop>
-												<stop offset="0.26" stop-color="#00BEFF"></stop>
-												<stop offset="0.512" stop-color="#00D2FF"></stop>
-												<stop offset="0.76" stop-color="#00DFFF"></stop>
-												<stop offset="1" stop-color="#00E3FF"></stop>
+												<stop stopColor="#00A0FF"></stop>
+												<stop offset="0.007" stopColor="#00A1FF"></stop>
+												<stop offset="0.26" stopColor="#00BEFF"></stop>
+												<stop offset="0.512" stopColor="#00D2FF"></stop>
+												<stop offset="0.76" stopColor="#00DFFF"></stop>
+												<stop offset="1" stopColor="#00E3FF"></stop>
 											</linearGradient>
 											<linearGradient
 												id="paint1_linear_2092_139931"
@@ -440,10 +493,10 @@ export default function Home() {
 												y2="20.001"
 												gradientUnits="userSpaceOnUse"
 											>
-												<stop stop-color="#FFE000"></stop>
-												<stop offset="0.409" stop-color="#FFBD00"></stop>
-												<stop offset="0.775" stop-color="orange"></stop>
-												<stop offset="1" stop-color="#FF9C00"></stop>
+												<stop stopColor="#FFE000"></stop>
+												<stop offset="0.409" stopColor="#FFBD00"></stop>
+												<stop offset="0.775" stopColor="orange"></stop>
+												<stop offset="1" stopColor="#FF9C00"></stop>
 											</linearGradient>
 											<linearGradient
 												id="paint2_linear_2092_139931"
@@ -453,8 +506,8 @@ export default function Home() {
 												y2="45.053"
 												gradientUnits="userSpaceOnUse"
 											>
-												<stop stop-color="#FF3A44"></stop>
-												<stop offset="1" stop-color="#C31162"></stop>
+												<stop stopColor="#FF3A44"></stop>
+												<stop offset="1" stopColor="#C31162"></stop>
 											</linearGradient>
 											<linearGradient
 												id="paint3_linear_2092_139931"
@@ -464,11 +517,11 @@ export default function Home() {
 												y2="10.339"
 												gradientUnits="userSpaceOnUse"
 											>
-												<stop stop-color="#32A071"></stop>
-												<stop offset="0.069" stop-color="#2DA771"></stop>
-												<stop offset="0.476" stop-color="#15CF74"></stop>
-												<stop offset="0.801" stop-color="#06E775"></stop>
-												<stop offset="1" stop-color="#00F076"></stop>
+												<stop stopColor="#32A071"></stop>
+												<stop offset="0.069" stopColor="#2DA771"></stop>
+												<stop offset="0.476" stopColor="#15CF74"></stop>
+												<stop offset="0.801" stopColor="#06E775"></stop>
+												<stop offset="1" stopColor="#00F076"></stop>
 											</linearGradient>
 										</defs>
 									</svg>
@@ -479,409 +532,7 @@ export default function Home() {
 				</div>
 			</div>
 
-			<div className="relative w-full px-8 py-16 bg-zinc-50 border-t border-gray-200">
-				<div className="w-full flex justify-between ">
-					<div className="w-4/12 pr-6">
-						<svg
-							xmlnsXlink="http://www.w3.org/1999/xlink"
-							viewBox="0 0 168 268"
-							className="h-auto w-12 mb-8"
-							fill="currentColor"
-							xmlns="http://www.w3.org/2000/svg"
-							width="168"
-							height="268"
-						>
-							<path d="M41.78 157.47L28.15 157.5L0.829987 117.95L28.5 76.5H52.83L25.17 116.79L52.83 157.5L41.78 157.47Z"></path>
-							<path d="M126.22 157.47L139.85 157.5L167.17 117.95L139.5 76.5H115.17L142.83 116.79L115.17 157.5L126.22 157.47Z"></path>
-							<path d="M99.7 136.57C96.92 140.75 92.9 143.39 88.41 143.39C80.03 143.39 73.23 134.22 73.23 122.91C73.23 111.6 80.03 102.43 88.41 102.43C92.81 102.43 96.77 104.97 99.54 109.01L113.02 99.59C106.98 90.99 97.74 85.48 87.36 85.48C69.16 85.48 54.41 102.39 54.41 123.25C54.41 144.11 69.16 161.02 87.36 161.02C98.63 161.02 108.57 154.53 114.51 144.63L99.7 136.57Z"></path>
-							<path d="M84.83 0.5C67.16 0.5 52.83 17.39 52.83 38.23C52.83 59.07 67.16 75.96 84.83 75.96C102.5 75.96 116.83 59.07 116.83 38.23C116.83 17.39 102.51 0.5 84.83 0.5ZM85.15 59.66C77.26 59.66 70.87 50.35 70.87 38.88C70.87 27.41 77.26 18.1 85.15 18.1C93.04 18.1 99.43 27.41 99.43 38.88C99.43 50.35 93.04 59.66 85.15 59.66Z"></path>
-							<path d="M74.54 171.5H97.57L124.97 267.5H103.1L86.29 199.27L68.79 267.5H47.83L74.54 171.5Z"></path>
-						</svg>
-						<p className="text-md  font-normal my-2 text-gray-700">
-							Learn to code interactively - without ever leaving your browser.
-						</p>
-						<div className="flex w-full mt-8">
-							<Link href={''}>
-								<svg
-									xmlnsXlink="http://www.w3.org/1999/xlink"
-									xmlns="http://www.w3.org/2000/svg"
-									fill="currentColor"
-									viewBox="0 0 24 24"
-									className="h-6 w-6 mr-6"
-									aria-hidden="true"
-									width="24"
-									height="24"
-								>
-									<path
-										fill-rule="evenodd"
-										d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-										clip-rule="evenodd"
-										fill="#71717A"
-									></path>
-								</svg>
-							</Link>
-							<Link href={''}>
-								<svg
-									xmlnsXlink="http://www.w3.org/1999/xlink"
-									xmlns="http://www.w3.org/2000/svg"
-									fill="currentColor"
-									viewBox="0 0 24 24"
-									className="h-6 w-6 mr-6"
-									aria-hidden="true"
-									width="24"
-									height="24"
-								>
-									<path
-										fill-rule="evenodd"
-										d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
-										clip-rule="evenodd"
-										fill="#71717A"
-									></path>
-								</svg>
-							</Link>
-							<Link href={''}>
-								<svg
-									xmlnsXlink="http://www.w3.org/1999/xlink"
-									xmlns="http://www.w3.org/2000/svg"
-									fill="currentColor"
-									viewBox="0 0 24 24"
-									className="h-6 w-6 mr-6"
-									aria-hidden="true"
-									width="24"
-									height="24"
-								>
-									<path
-										d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
-										fill="#71717A"
-									></path>
-								</svg>
-							</Link>
-							<Link href={''}>
-								<svg
-									xmlnsXlink="http://www.w3.org/1999/xlink"
-									xmlns="http://www.w3.org/2000/svg"
-									fill="currentColor"
-									viewBox="0 0 24 24"
-									className="h-6 w-6 mr-6"
-									aria-hidden="true"
-									width="24"
-									height="24"
-								>
-									<path
-										fill-rule="evenodd"
-										d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-										clip-rule="evenodd"
-										fill="#71717A"
-									></path>
-								</svg>
-							</Link>
-							<Link href={''}>
-								<svg
-									xmlnsXlink="http://www.w3.org/1999/xlink"
-									xmlns="http://www.w3.org/2000/svg"
-									className="h-6 w-6 mr-6"
-									aria-hidden="true"
-									fill="currentColor"
-									viewBox="0 0 75 75"
-									width="75"
-									height="75"
-								>
-									<defs>
-										<clipPath id="clip1">
-											<path d="M 0 9.609375 L 75 9.609375 L 75 64.828125 L 0 64.828125 Z M 0 9.609375 "></path>
-										</clipPath>
-									</defs>
-									<g id="surface1" fill="#71717A">
-										<g
-											clip-path="url(#clip1)"
-											clip-rule="nonzero"
-											fill="#71717A"
-										>
-											<path
-												fill="#71717A"
-												d="M 72.910156 19.132812 C 72.214844 15.34375 68.914062 12.585938 65.078125 11.722656 C 59.339844 10.519531 48.722656 9.65625 37.234375 9.65625 C 25.753906 9.65625 14.96875 10.519531 9.222656 11.722656 C 5.398438 12.585938 2.085938 15.167969 1.394531 19.132812 C 0.691406 23.4375 0 29.46875 0 37.21875 C 0 44.972656 0.691406 51 1.5625 55.308594 C 2.261719 59.09375 5.566406 61.855469 9.394531 62.714844 C 15.484375 63.921875 25.925781 64.78125 37.414062 64.78125 C 48.902344 64.78125 59.339844 63.921875 65.433594 62.714844 C 69.257812 61.855469 72.5625 59.269531 73.261719 55.308594 C 73.957031 51 74.824219 44.796875 75.003906 37.21875 C 74.648438 29.46875 73.777344 23.4375 72.910156 19.132812 Z M 27.84375 49.277344 L 27.84375 25.160156 L 49.070312 37.21875 Z M 27.84375 49.277344 "
-											></path>
-										</g>
-									</g>
-								</svg>
-							</Link>
-							<Link href={''}>
-								<svg
-									xmlnsXlink="http://www.w3.org/1999/xlink"
-									xmlns="http://www.w3.org/2000/svg"
-									className="h-6 w-6 mr-6"
-									aria-hidden="true"
-									fill="currentColor"
-									viewBox="0 0 50 50"
-									width="50"
-									height="50"
-								>
-									<path
-										d="M 41.625 10.769531 C 37.644531 7.566406 31.347656 7.023438 31.078125 7.003906 C 30.660156 6.96875 30.261719 7.203125 30.089844 7.589844 C 30.074219 7.613281 29.9375 7.929688 29.785156 8.421875 C 32.417969 8.867188 35.652344 9.761719 38.578125 11.578125 C 39.046875 11.867188 39.191406 12.484375 38.902344 12.953125 C 38.710938 13.261719 38.386719 13.429688 38.050781 13.429688 C 37.871094 13.429688 37.6875 13.378906 37.523438 13.277344 C 32.492188 10.15625 26.210938 10 25 10 C 23.789063 10 17.503906 10.15625 12.476563 13.277344 C 12.007813 13.570313 11.390625 13.425781 11.101563 12.957031 C 10.808594 12.484375 10.953125 11.871094 11.421875 11.578125 C 14.347656 9.765625 17.582031 8.867188 20.214844 8.425781 C 20.0625 7.929688 19.925781 7.617188 19.914063 7.589844 C 19.738281 7.203125 19.34375 6.960938 18.921875 7.003906 C 18.652344 7.023438 12.355469 7.566406 8.320313 10.8125 C 6.214844 12.761719 2 24.152344 2 34 C 2 34.175781 2.046875 34.34375 2.132813 34.496094 C 5.039063 39.605469 12.972656 40.941406 14.78125 41 C 14.789063 41 14.800781 41 14.8125 41 C 15.132813 41 15.433594 40.847656 15.621094 40.589844 L 17.449219 38.074219 C 12.515625 36.800781 9.996094 34.636719 9.851563 34.507813 C 9.4375 34.144531 9.398438 33.511719 9.765625 33.097656 C 10.128906 32.683594 10.761719 32.644531 11.175781 33.007813 C 11.234375 33.0625 15.875 37 25 37 C 34.140625 37 38.78125 33.046875 38.828125 33.007813 C 39.242188 32.648438 39.871094 32.683594 40.238281 33.101563 C 40.601563 33.515625 40.5625 34.144531 40.148438 34.507813 C 40.003906 34.636719 37.484375 36.800781 32.550781 38.074219 L 34.378906 40.589844 C 34.566406 40.847656 34.867188 41 35.1875 41 C 35.199219 41 35.210938 41 35.21875 41 C 37.027344 40.941406 44.960938 39.605469 47.867188 34.496094 C 47.953125 34.34375 48 34.175781 48 34 C 48 24.152344 43.785156 12.761719 41.625 10.769531 Z M 18.5 30 C 16.566406 30 15 28.210938 15 26 C 15 23.789063 16.566406 22 18.5 22 C 20.433594 22 22 23.789063 22 26 C 22 28.210938 20.433594 30 18.5 30 Z M 31.5 30 C 29.566406 30 28 28.210938 28 26 C 28 23.789063 29.566406 22 31.5 22 C 33.433594 22 35 23.789063 35 26 C 35 28.210938 33.433594 30 31.5 30 Z"
-										fill="#71717A"
-									></path>
-								</svg>
-							</Link>
-						</div>
-					</div>
-					<div className="w-8/12 flex justify-between">
-						<div className="flex justify-between">
-							<div className="w-[200px] pr-8">
-								<h3 className="uppercase text-sm font-semibold tracking-wider mb-4 text-zinc-700">
-									Solutions
-								</h3>
-								<ul>
-									<li className="mb-4">
-										<a
-											className="text-md font-normal text-zinc-500 hover:text-zinc-900 mb-4"
-											href=""
-										>
-											Learning paths
-										</a>
-									</li>
-									<li className="mb-4">
-										<a
-											className="text-md font-normal text-zinc-500 hover:text-zinc-900"
-											href=""
-										>
-											Explore courses
-										</a>
-									</li>
-									<li className="mb-4">
-										<a
-											className="text-md font-normal text-zinc-500 hover:text-zinc-900 mb-4"
-											href=""
-										>
-											Build projects
-										</a>
-									</li>
-									<li className="mb-4">
-										<a
-											className="text-md font-normal text-zinc-500 hover:text-zinc-900 mb-4"
-											href=""
-										>
-											Boot playgrounds
-										</a>
-									</li>
-									<li className="mb-4">
-										<a
-											className="text-md font-normal text-zinc-500 hover:text-zinc-900 mb-4"
-											href=""
-										>
-											Teach on codedamn
-										</a>
-									</li>
-								</ul>
-							</div>
-							<div className="w-[200px] pr-8">
-								<h3 className="uppercase text-sm font-semibold tracking-wider mb-4 text-zinc-700">
-									Resources
-								</h3>
-								<ul>
-									<li className="mb-4">
-										<a
-											href=""
-											className="text-md font-normal text-zinc-500 hover:text-zinc-900 mb-4"
-										>
-											Pricing
-										</a>
-									</li>
-									<li className="mb-4">
-										<a
-											href=""
-											className="text-md font-normal text-zinc-500 hover:text-zinc-900 mb-4"
-										>
-											Student account
-										</a>
-									</li>
-									<li className="mb-4">
-										<a
-											href=""
-											className="text-md font-normal text-zinc-500 hover:text-zinc-900 mb-4"
-										>
-											Developer blog
-										</a>
-									</li>
-									<li className="mb-4">
-										<a
-											href=""
-											className="text-md font-normal text-zinc-500 hover:text-zinc-900 mb-4"
-										>
-											Refer and earn
-										</a>
-									</li>
-									<li className="mb-4">
-										<a
-											href=""
-											className="text-md font-normal text-zinc-500 hover:text-zinc-900 mb-4"
-										>
-											Affiliate program
-										</a>
-									</li>
-									<li className="mb-4">
-										<a
-											href=""
-											className="text-md font-normal text-zinc-500 hover:text-zinc-900 mb-4"
-										>
-											Online compilers
-										</a>
-									</li>
-									<li className="mb-4">
-										<a
-											href=""
-											className="text-md font-normal text-zinc-500 hover:text-zinc-900 mb-4"
-										>
-											Online web tools
-										</a>
-									</li>
-									<li className="mb-4">
-										<a
-											href=""
-											className="text-md font-normal text-zinc-500 hover:text-zinc-900 mb-4"
-										>
-											Choose your career
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div className="flex justify-between">
-							<div className="w-[200px] pr-8">
-								<h3 className="uppercase text-sm font-semibold tracking-wider mb-4 text-zinc-700">
-									Company
-								</h3>
-								<ul>
-									<li className="mb-4">
-										<a
-											className="text-md font-normal text-zinc-500 hover:text-zinc-900 mb-4"
-											href=""
-										>
-											About
-										</a>
-									</li>
-									<li className="mb-4">
-										<a
-											className="text-md font-normal text-zinc-500 hover:text-zinc-900"
-											href=""
-										>
-											Careers
-										</a>
-									</li>
-									<li className="mb-4">
-										<a
-											className="text-md font-normal text-zinc-500 hover:text-zinc-900 mb-4"
-											href=""
-										>
-											Support
-										</a>
-									</li>
-									<li className="mb-4">
-										<a
-											className="text-md font-normal text-zinc-500 hover:text-zinc-900 mb-4"
-											href=""
-										>
-											Terms
-										</a>
-									</li>
-									<li className="mb-4">
-										<a
-											className="text-md font-normal text-zinc-500 hover:text-zinc-900 mb-4"
-											href=""
-										>
-											Privacy
-										</a>
-									</li>
-									<li className="mb-4">
-										<a
-											className="text-md font-normal text-zinc-500 hover:text-zinc-900 mb-4"
-											href=""
-										>
-											Feedback
-										</a>
-									</li>
-								</ul>
-							</div>
-							<div className="w-[200px] pr-8">
-								<h3 className="uppercase text-sm font-semibold tracking-wider mb-4 text-zinc-700">
-									Popular
-								</h3>
-								<ul>
-									<li className="mb-4">
-										<a
-											href=""
-											className="text-md font-normal text-zinc-500 hover:text-zinc-900 mb-4"
-										>
-											How much JS before React?
-										</a>
-									</li>
-									<li className="mb-4">
-										<a
-											href=""
-											className="text-md font-normal text-zinc-500 hover:text-zinc-900 mb-4"
-										>
-											Solidity require keyword
-										</a>
-									</li>
-									<li className="mb-4">
-										<a
-											href=""
-											className="text-md font-normal text-zinc-500 hover:text-zinc-900 mb-4"
-										>
-											Next.js vs Nuxt.js
-										</a>
-									</li>
-									<li className="mb-4">
-										<a
-											href=""
-											className="text-md font-normal text-zinc-500 hover:text-zinc-900 mb-4"
-										>
-											React.js online compiler
-										</a>
-									</li>
-									<li className="mb-4">
-										<a
-											href=""
-											className="text-md font-normal text-zinc-500 hover:text-zinc-900 mb-4"
-										>
-											Python online IDE
-										</a>
-									</li>
-									<li className="mb-4">
-										<a
-											href=""
-											className="text-md font-normal text-zinc-500 hover:text-zinc-900 mb-4"
-										>
-											Next.js best practices
-										</a>
-									</li>
-									<li className="mb-4">
-										<a
-											href=""
-											className="text-md font-normal text-zinc-500 hover:text-zinc-900 mb-4"
-										>
-											Payable function solidity
-										</a>
-									</li>
-									<li className="mb-4">
-										<a
-											href=""
-											className="text-md font-normal text-zinc-500 hover:text-zinc-900 mb-4"
-										>
-											Solidity online compiler
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div className="w-full text-center pt-8 border-t mt-12 border-gray-200">
-					<span className="text-zinc-400">
-						&copy; codedamn&trade; 2023 | All rights reserved.
-					</span>
-				</div>
-			</div>
+			<Footer />
 		</>
 	)
 }

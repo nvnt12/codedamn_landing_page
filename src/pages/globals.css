@@ -1,25 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
 
 html {
-	width: 100%;
-	height: 100%;
-	font-family: 'Inter', sans-serif;
+	margin: 0;
+	height: auto;
 }
 
 body {
-	width: 100%;
-	height: 100%;
+	margin: 0;
+	height: auto;
 }
 
 #__next {
-	width: 100%;
-	height: 100%;
+	margin: 0;
+	height: auto;
 }
 
 main {
-	width: 100%;
-	height: 100%;
+	margin: 0;
+	height: auto;
 }
