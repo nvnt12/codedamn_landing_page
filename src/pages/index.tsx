@@ -4,6 +4,7 @@ import NavBar from '../components/NavBar'
 import Image from 'next/image'
 import Footer from '../components/Footer'
 import HeroSection from '../components/HeroSection'
+import { BsFillStarFill } from 'react-icons/bs'
 
 export default function Home() {
 	return (
@@ -182,14 +183,272 @@ export default function Home() {
 				</div>
 			</div>
 
+			<div className="w-full h-36 flex justify-center items-center bg-zinc-50/50 border-t border-b border-gray-100">
+				<div className="w-full h-full flex items-center justify-center">
+					<div className="flex flex-col justify-center items-center w-80 border-r border-gray-200">
+						<p className="text-5xl font-extrabold text-zinc-900">256K+</p>
+						<p className="text-sm font-bold mt-2.5 tracking-wider uppercase text-zinc-600">
+							Developers
+						</p>
+					</div>
+					<div className="flex flex-col justify-center items-center w-80 border-r border-gray-200">
+						<p className="text-5xl font-extrabold text-zinc-900">1.4M+</p>
+						<p className="text-sm font-bold mt-2.5 tracking-wider uppercase text-zinc-600">
+							Playgrounds booted
+						</p>
+					</div>
+					<div className="flex flex-col justify-center items-center w-80 border-r border-gray-200">
+						<p className="text-5xl font-extrabold text-zinc-900">228K+</p>
+						<p className="text-sm font-bold mt-2.5 tracking-wider uppercase text-zinc-600">
+							Doubts solved by Jarvis
+						</p>
+					</div>
+					<div className="flex flex-col justify-center items-center w-80">
+						<p className="text-5xl font-extrabold text-zinc-900">100K+</p>
+						<p className="text-sm font-bold mt-2.5 tracking-wider uppercase text-zinc-600">
+							Hours of learning
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div className="w-full h-fit bg-white py-20 px-6 grid grid-cols-3 gap-4 bg-opacity-50 bg-gradient-to-l bg-notebook-lines">
+				<div className="w-full h-fit py-7 px-6 text-left bg-white/90 rounded-xl border border-gray-100 shadow-xl shadow-gray-400/30">
+					<div className="flex w-full ">
+						<BsFillStarFill className="w-[18px] h-[18px] fill-amber-400 mr-2" />
+						<BsFillStarFill className="w-[18px] h-[18px] fill-amber-400 mr-2" />
+						<BsFillStarFill className="w-[18px] h-[18px] fill-amber-400 mr-2" />
+						<BsFillStarFill className="w-[18px] h-[18px] fill-amber-400 mr-2" />
+						<BsFillStarFill className="w-[18px] h-[18px] fill-amber-400 mr-2" />
+					</div>
+					<div className="w mt-6">
+						<p className="text-gray-700 font-normal tracking-normal leading-7 mt-1.5 text-[18px]">
+							&ldquo;I have seen so many courses but finding course that gives lecture
+							+ playground to code is difficult to find. But codedamn is totally
+							amazing in this perspective even quality of content is unmatchable and
+							helped me many times in understanding concepts in depth.&rdquo;
+						</p>
+					</div>
+					<div className="w-full h-px bg-gray-200 my-6"></div>
+					<div className="flex justify-between">
+						<div className="mx-2">
+							<p className="text-gray-700 font-semibold text-lg">Ashish Kumar</p>
+							<p className="text-gray-500 font-medium text-sm">Software Engineer</p>
+						</div>
+						<Image
+							src={'/pp4.png'}
+							alt={'Testimonial User Profile Picture'}
+							width={50}
+							height={50}
+							className="rounded-full"
+						/>
+					</div>
+				</div>
+				<div className="w-full h-fit py-7 px-6 text-left bg-white/90 rounded-xl border border-gray-100 shadow-xl shadow-gray-400/30">
+					<div className="flex w-full ">
+						<BsFillStarFill className="w-[18px] h-[18px] fill-amber-400 mr-2" />
+						<BsFillStarFill className="w-[18px] h-[18px] fill-amber-400 mr-2" />
+						<BsFillStarFill className="w-[18px] h-[18px] fill-amber-400 mr-2" />
+						<BsFillStarFill className="w-[18px] h-[18px] fill-amber-400 mr-2" />
+						<BsFillStarFill className="w-[18px] h-[18px] fill-amber-400 mr-2" />
+					</div>
+					<div className="w mt-6">
+						<p className="text-gray-700 font-normal tracking-normal leading-7 mt-1.5 text-[18px]">
+							&ldquo;I have seen so many courses but finding course that gives lecture
+							+ playground to code is difficult to find. But codedamn is totally
+							amazing in this perspective even quality of content is unmatchable and
+							helped me many times in understanding concepts in depth.&rdquo;
+						</p>
+					</div>
+					<div className="w-full h-px bg-gray-200 my-6"></div>
+					<div className="flex justify-between">
+						<div className="mx-2">
+							<p className="text-gray-700 font-semibold text-lg">Ashish Kumar</p>
+							<p className="text-gray-500 font-medium text-sm">Software Engineer</p>
+						</div>
+						<Image
+							src={'/pp4.png'}
+							alt={'Testimonial User Profile Picture'}
+							width={50}
+							height={50}
+							className="rounded-full"
+						/>
+					</div>
+				</div>
+				<div className="w-full h-fit py-7 px-6 text-left bg-white/90 rounded-xl border border-gray-100 shadow-xl shadow-gray-400/30">
+					<div className="flex w-full ">
+						<BsFillStarFill className="w-[18px] h-[18px] fill-amber-400 mr-2" />
+						<BsFillStarFill className="w-[18px] h-[18px] fill-amber-400 mr-2" />
+						<BsFillStarFill className="w-[18px] h-[18px] fill-amber-400 mr-2" />
+						<BsFillStarFill className="w-[18px] h-[18px] fill-amber-400 mr-2" />
+						<BsFillStarFill className="w-[18px] h-[18px] fill-amber-400 mr-2" />
+					</div>
+					<div className="w mt-6">
+						<p className="text-gray-700 font-normal tracking-normal leading-7 mt-1.5 text-[18px]">
+							&ldquo;I have seen so many courses but finding course that gives lecture
+							+ playground to code is difficult to find. But codedamn is totally
+							amazing in this perspective even quality of content is unmatchable and
+							helped me many times in understanding concepts in depth.&rdquo;
+						</p>
+					</div>
+					<div className="w-full h-px bg-gray-200 my-6"></div>
+					<div className="flex justify-between">
+						<div className="mx-2">
+							<p className="text-gray-700 font-semibold text-lg">Ashish Kumar</p>
+							<p className="text-gray-500 font-medium text-sm">Software Engineer</p>
+						</div>
+						<Image
+							src={'/pp4.png'}
+							alt={'Testimonial User Profile Picture'}
+							width={50}
+							height={50}
+							className="rounded-full"
+						/>
+					</div>
+				</div>
+				<div className="w-full h-fit py-7 px-6 text-left bg-white/90 rounded-xl border border-gray-100 shadow-xl shadow-gray-400/30">
+					<div className="flex w-full ">
+						<BsFillStarFill className="w-[18px] h-[18px] fill-amber-400 mr-2" />
+						<BsFillStarFill className="w-[18px] h-[18px] fill-amber-400 mr-2" />
+						<BsFillStarFill className="w-[18px] h-[18px] fill-amber-400 mr-2" />
+						<BsFillStarFill className="w-[18px] h-[18px] fill-amber-400 mr-2" />
+						<BsFillStarFill className="w-[18px] h-[18px] fill-amber-400 mr-2" />
+					</div>
+					<div className="w mt-6">
+						<p className="text-gray-700 font-normal tracking-normal leading-7 mt-1.5 text-[18px]">
+							&ldquo;I have seen so many courses but finding course that gives lecture
+							+ playground to code is difficult to find. But codedamn is totally
+							amazing in this perspective even quality of content is unmatchable and
+							helped me many times in understanding concepts in depth.&rdquo;
+						</p>
+					</div>
+					<div className="w-full h-px bg-gray-200 my-6"></div>
+					<div className="flex justify-between">
+						<div className="mx-2">
+							<p className="text-gray-700 font-semibold text-lg">Ashish Kumar</p>
+							<p className="text-gray-500 font-medium text-sm">Software Engineer</p>
+						</div>
+						<Image
+							src={'/pp4.png'}
+							alt={'Testimonial User Profile Picture'}
+							width={50}
+							height={50}
+							className="rounded-full"
+						/>
+					</div>
+				</div>
+				<div className="w-full h-fit py-7 px-6 text-left bg-white/90 rounded-xl border border-gray-100 shadow-xl shadow-gray-400/30">
+					<div className="flex w-full ">
+						<BsFillStarFill className="w-[18px] h-[18px] fill-amber-400 mr-2" />
+						<BsFillStarFill className="w-[18px] h-[18px] fill-amber-400 mr-2" />
+						<BsFillStarFill className="w-[18px] h-[18px] fill-amber-400 mr-2" />
+						<BsFillStarFill className="w-[18px] h-[18px] fill-amber-400 mr-2" />
+						<BsFillStarFill className="w-[18px] h-[18px] fill-amber-400 mr-2" />
+					</div>
+					<div className="w mt-6">
+						<p className="text-gray-700 font-normal tracking-normal leading-7 mt-1.5 text-[18px]">
+							&ldquo;I have seen so many courses but finding course that gives lecture
+							+ playground to code is difficult to find. But codedamn is totally
+							amazing in this perspective even quality of content is unmatchable and
+							helped me many times in understanding concepts in depth.&rdquo;
+						</p>
+					</div>
+					<div className="w-full h-px bg-gray-200 my-6"></div>
+					<div className="flex justify-between">
+						<div className="mx-2">
+							<p className="text-gray-700 font-semibold text-lg">Ashish Kumar</p>
+							<p className="text-gray-500 font-medium text-sm">Software Engineer</p>
+						</div>
+						<Image
+							src={'/pp4.png'}
+							alt={'Testimonial User Profile Picture'}
+							width={50}
+							height={50}
+							className="rounded-full"
+						/>
+					</div>
+				</div>
+				<div className="w-full h-fit py-7 px-6 text-left bg-white/90 rounded-xl border border-gray-100 shadow-xl shadow-gray-400/30">
+					<div className="flex w-full ">
+						<BsFillStarFill className="w-[18px] h-[18px] fill-amber-400 mr-2" />
+						<BsFillStarFill className="w-[18px] h-[18px] fill-amber-400 mr-2" />
+						<BsFillStarFill className="w-[18px] h-[18px] fill-amber-400 mr-2" />
+						<BsFillStarFill className="w-[18px] h-[18px] fill-amber-400 mr-2" />
+						<BsFillStarFill className="w-[18px] h-[18px] fill-amber-400 mr-2" />
+					</div>
+					<div className="w mt-6">
+						<p className="text-gray-700 font-normal tracking-normal leading-7 mt-1.5 text-[18px]">
+							&ldquo;I have seen so many courses but finding course that gives lecture
+							+ playground to code is difficult to find. But codedamn is totally
+							amazing in this perspective even quality of content is unmatchable and
+							helped me many times in understanding concepts in depth.&rdquo;
+						</p>
+					</div>
+					<div className="w-full h-px bg-gray-200 my-6"></div>
+					<div className="flex justify-between">
+						<div className="mx-2">
+							<p className="text-gray-700 font-semibold text-lg">Ashish Kumar</p>
+							<p className="text-gray-500 font-medium text-sm">Software Engineer</p>
+						</div>
+						<Image
+							src={'/pp4.png'}
+							alt={'Testimonial User Profile Picture'}
+							width={50}
+							height={50}
+							className="rounded-full"
+						/>
+					</div>
+				</div>
+			</div>
+
 			<div className="w-full h-[730px] border-t border-gray-200 bg-gray-50/75 py-20 px-6">
-				<div className="h-full">
+				<div className="relative h-full">
 					<h4 className="uppercase text-center text-base font-bold tracking-widest text-gray-500 mb-6">
 						Begin your journey with codedamn
 					</h4>
 					<div className="w-full h-full flex pt-10 pb-20">
-						<div className="w-3/6"></div>
-						<div className="w-3/6 bg-white mr-12 border border-gray-200 rounded-2xl p-20">
+						<div className="w-3/6 h-full flex items-center ">
+							<div className="w-full h-full flex flex-col justify-center ">
+								<div className="w-11/12 relative left-8 h-px bg-gray-200"></div>
+								<ul className="w-full bg-white bg-opacity-50 ml-12">
+									<li className="w-full py-4 px-[42px]">
+										<h3 className="text-[30px] tracking-tight uppercase font-bold text-zinc-600">
+											Learn
+										</h3>
+										<p className="text-base font-normal mt-1 mb-2 text-zinc-600">
+											Get access to 100+ courses from renowned instructors.
+										</p>
+									</li>
+								</ul>
+								<div className="w-11/12 relative left-8 h-px bg-gray-200"></div>
+								<div className="relative top-[52px] -left-36 w-8/12 h-px rotate-90 bg-gray-200"></div>
+								<ul className="w-full bg-white ml-12">
+									<li className="w-full py-4 px-[42px]">
+										<h3 className="text-[30px] tracking-tight uppercase font-bold text-zinc-600">
+											Apply
+										</h3>
+										<p className="text-base font-normal mt-1 mb-2 text-zinc-600">
+											Build projects and boot playgrounds, all within your
+											browser.
+										</p>
+									</li>
+								</ul>
+								<div className="w-11/12 relative left-8 h-px bg-gray-200"></div>
+								<ul className="w-full bg-white ml-12">
+									<li className="w-full py-4 px-[42px]">
+										<h3 className="text-[30px] tracking-tight uppercase font-bold text-zinc-600">
+											Grow
+										</h3>
+										<p className="text-base font-normal mt-1 mb-2 text-zinc-600">
+											Upskill yourself with codedamn and land your dream job.
+										</p>
+									</li>
+								</ul>
+								<div className="w-11/12 relative left-8 h-px bg-gray-200"></div>
+							</div>
+						</div>
+
+						<div className="ml-3 w-3/6 bg-white mr-12 border border-gray-200 rounded-2xl p-20">
 							<div className="px-5 h-full flex flex-col gap-4">
 								<button className="w-full bg-gray-50/75 flex items-center justify-center border border-gray-300 rounded-lg p-3 text-base font-medium">
 									<svg
@@ -228,9 +487,9 @@ export default function Home() {
 											d="M128 0a128 128 0 0 0-40 249c6 2 8-2 8-6v-24c-36 8-43-15-43-15-6-14-14-18-14-18-12-8 1-8 1-8 12 1 19 13 19 13 12 20 30 14 38 11 1-9 4-14 8-17-29-4-59-15-59-64 0-14 5-25 14-34-2-3-6-16 1-34 0 0 11-3 35 13a123 123 0 0 1 64 0c24-16 35-13 35-13 7 18 3 31 1 34 9 9 14 20 14 34 0 49-30 60-59 63 5 4 9 12 9 24v35c0 4 2 8 9 6A128 128 0 0 0 128 0zM48 182l-2 1-1-2 2-1 1 2zm6 6-2-1-1-2h3v3zm5 7c-1 1-3 0-3-1v-3c1-1 2 0 3 1v3zm7 8h-3c-2-1-2-3-1-3h3l1 3zm9 3c0 1-1 2-3 1l-2-2c0-1 2-2 3-1 2 0 3 1 2 2zm11 1c0 2-1 2-3 2l-2-1c0-2 1-2 2-2l3 1zm11 0c0 1-1 2-3 2-1 1-3 0-3-1s1-2 3-2c1-1 2 0 3 1z"
 										></path>
 									</svg>
-									Continue with Github
+									Continue with GitHub
 								</button>
-								<div className="relative h-6 flex flex-col justify-center my-2">
+								<div className="relative h-6 flex flex-col justify-center my-3">
 									<div className="w-full border-t border-gray-200"></div>
 									<div className="absolute w-full flex justify-center items-center ">
 										<span className="text-sm px-2 bg-white text-gray-500">

@@ -21,3 +21,21 @@ main {
 	margin: 0;
 	height: auto;
 }
+
+.bg-notebook-lines {
+	background-image: repeating-linear-gradient(
+			to bottom,
+			transparent,
+			transparent 49px,
+			rgba(143, 143, 143, 0.1) 49px,
+			rgba(143, 143, 143, 0.1) 50px
+		),
+		repeating-linear-gradient(
+			to right,
+			transparent,
+			transparent 49px,
+			rgba(143, 143, 143, 0.1) 49px,
+			rgba(143, 143, 143, 0.1) 50px
+		);
+	background-size: 50px 50px;
+}

@@ -12,7 +12,7 @@ export default function HeroSection() {
 			</div>
 
 			<div className="relative flex justify-center">
-				<div className="absolute flex justify-center items-center w-[1180px] h-[1180px] border border-gray-300 rounded-full -top-[225px]">
+				<div className="absolute flex justify-center items-center w-[1180px] h-[1180px] border border-gray-300 rounded-full -top-[220px]">
 					<svg
 						viewBox="0 0 152 162"
 						className="absolute left-[1.85%] top-[50.5%] hidden w-[11.75%] -rotate-[31deg] stroke-gray-300 sm:block"
@@ -79,28 +79,28 @@ export default function HeroSection() {
 
 			<div className="realtive w-full h-full">
 				<div className="absolute w-full h-full text-center top-0">
-					<div className="absolute font-mono w-fit h-fit p-4 text-left bg-white rounded-lg border border-gray-100 shadow shadow-gray-200 top-32 left-52">
-						<div className="absolute -top-4 left-40 w-fit h-fit">
+					<div className="absolute font-mono w-fit h-fit p-4 text-left bg-white rounded-lg border border-gray-100 shadow shadow-gray-200 top-[130px] left-52">
+						<div className="absolute -top-[12px] left-[158px] w-fit h-fit">
 							<svg
 								viewBox="0 0 28 28"
-								className="w-10 h-10 bg-white p-[7%] rounded-full border-2 border-gray-100 shadow shadow-gray-100"
+								className="w-[38px] h-[38px] bg-white p-[8%] rounded-full border border-gray-100 shadow shadow-gray-200"
 							>
 								<path d="M14 .7a13.3 13.3 0 1 0 0 26.6A13.3 13.3 0 0 0 14 .7ZM9.4 16c.4.3.4 1 0 1.4a1 1 0 0 1-.7.3 1 1 0 0 1-.7-.3l-2.7-2.7a1 1 0 0 1 0-1.4L8 10.6a1 1 0 0 1 1.4 0c.4.4.4 1 0 1.4l-2 2 2 2Zm6.9-4.7-2.7 6.2a1 1 0 0 1-1.3.5 1 1 0 0 1-.5-1.3l2.6-6.2a1 1 0 0 1 1.3-.5c.5.2.8.8.6 1.3Zm6.4 3.4L20 17.4a1 1 0 0 1-.7.3 1 1 0 0 1-.7-.3 1 1 0 0 1 0-1.4l2-2-2-2a1 1 0 0 1 0-1.4 1 1 0 0 1 1.4 0l2.7 2.7c.4.4.4 1 0 1.4Z"></path>
 							</svg>
 						</div>
 
 						<div className="flex w-full ">
-							<div className="w-1.5 h-1.5 rounded mr-1.5 -full bg-red-500 shadow shadow-red-500"></div>
-							<div className="w-1.5 h-1.5 rounded mr-1.5 -full bg-amber-400 shadow shadow-amber-400"></div>
-							<div className="w-1.5 h-1.5 rounded mr-1.5 -full bg-green-500 shadow shadow-green-500"></div>
+							<div className="w-[5px] h-[5px] rounded mr-1.5 -full bg-red-500 shadow shadow-red-500"></div>
+							<div className="w-[5px] h-[5px] rounded mr-1.5 -full bg-amber-400 shadow shadow-amber-400"></div>
+							<div className="w-[5px] h-[5px] rounded mr-1.5 -full bg-green-500 shadow shadow-green-500"></div>
 						</div>
 						<div className="mt-4">
-							<p className="text-gray-500 font-semibold mt-1 text-[10px]">
+							<p className="text-gray-500 font-semibold tracking-tight mt-1 text-[10px]">
 								<span className="font-bold text-[#0ea4e9f4]">&lt;h1&gt;</span>
 								&nbsp;Learn programming&nbsp;
 								<span className="font-bold text-[#0ea4e9f4]">&lt;/h1&gt;</span>
 							</p>
-							<p className="text-gray-500 font-semibold mt-1 text-[10px]">
+							<p className="text-gray-500 font-semibold tracking-tight mt-1 text-[10px]">
 								<span className="font-bold text-[#0ea4e9f4]">&lt;em&gt;</span>
 								&nbsp;with AI support&nbsp;
 								<span className="font-bold text-[#0ea4e9f4]">&lt;/em&gt;</span>
@@ -108,24 +108,24 @@ export default function HeroSection() {
 						</div>
 					</div>
 
-					<div className="relative w-48 h-fit top-[680px] left-[820px]">
+					<div className="relative w-48 h-fit top-[690px] left-[820px]">
 						<Image
 							src={'/pp1.png'}
 							alt={''}
-							width={46}
-							height={46}
+							width={45}
+							height={45}
 							className="rounded-full border border-white"
 						/>
-						<div className="absolute w-fit h-fit p-2.5 text-left bg-white/90 rounded-lg border border-gray-100 shadow shadow-gray-200 top-[34px] left-6">
+						<div className="absolute w-fit h-fit px-2.5 pt-2.5 pb-2 text-left bg-white/90 rounded-md border border-gray-100 shadow shadow-gray-200 top-[34px] left-[23px]">
 							<div className="flex w-full ">
-								<BsFillStarFill className="w-3 h-3 fill-amber-400 mr-0.5" />
-								<BsFillStarFill className="w-3 h-3 fill-amber-400 mr-0.5" />
-								<BsFillStarFill className="w-3 h-3 fill-amber-400 mr-0.5" />
-								<BsFillStarFill className="w-3 h-3 fill-amber-400 mr-0.5" />
-								<BsFillStarFill className="w-3 h-3 fill-amber-400 mr-0.5" />
+								<BsFillStarFill className="w-[11px] h-[11px] fill-amber-400 mr-0.5" />
+								<BsFillStarFill className="w-[11px] h-[11px] fill-amber-400 mr-0.5" />
+								<BsFillStarFill className="w-[11px] h-[11px] fill-amber-400 mr-0.5" />
+								<BsFillStarFill className="w-[11px] h-[11px] fill-amber-400 mr-0.5" />
+								<BsFillStarFill className="w-[11px] h-[11px] fill-amber-400 mr-0.5" />
 							</div>
-							<div className="mt-2 w-">
-								<p className="text-gray-600 font-semibold mt-1 text-[10px]">
+							<div className="mt-1.5">
+								<p className="text-gray-500 font-bold tracking-tight mt-1.5 text-[10px]">
 									&ldquo;Great platform for learning to
 									<br /> code.&rdquo;
 								</p>
@@ -133,7 +133,7 @@ export default function HeroSection() {
 						</div>
 					</div>
 
-					<div className="absolute w-[200px] h-fit p-5 text-left bg-white rounded-lg border border-gray-100 shadow shadow-gray-200 top-32 right-16">
+					<div className="absolute w-[200px] h-fit p-5 text-left bg-white rounded-lg border border-gray-100 shadow shadow-gray-200 top-[132px] right-16">
 						<svg
 							viewBox="0 0 29 18"
 							className="h-5 w-5 rounded bg-black p-[3.5%] md:h-6 md:w-6 min-[960px]:h-8 min-[960px]:w-8 lg:rounded-md xl:h-10 xl:w-10"
@@ -144,7 +144,7 @@ export default function HeroSection() {
 							></path>
 						</svg>
 						<div className="mt-4">
-							<p className="text-gray-800 font-bold mt-1 text-[13px] tracking-tight">
+							<p className="text-gray-700 font-bold tracking-[-0.015rem] mt-1 text-[13px]">
 								Apply as you learn
 							</p>
 							<p className="text-gray-400 font-semibold text-[10px]">
@@ -153,15 +153,15 @@ export default function HeroSection() {
 						</div>
 						<div className="relative mt-2.5">
 							<div className="w-full h-2 rounded -full bg-sky-100"></div>
-							<div className="absolute w-9/12 h-2 rounded -full bg-gradient-to-r from-sky-500 to-cyan-400 top-0"></div>
+							<div className="absolute w-[70%] h-2 rounded -full bg-gradient-to-r from-sky-500 to-cyan-400 top-0"></div>
 						</div>
 					</div>
 
-					<div className="absolute top-[380px] right-[260px]">
+					<div className="absolute top-[380px] right-[256px]">
 						<svg
 							fill="none"
 							viewBox="0 0 50 51"
-							className="w-9 h-9 p-[13%] bg-black rounded-lg"
+							className="w-[35px] h-[36px] p-[13%] bg-black rounded-lg"
 						>
 							<path
 								fill="url(#AccentSvgGradient)"
@@ -170,12 +170,12 @@ export default function HeroSection() {
 						</svg>
 					</div>
 
-					<div className="absolute top-[510px] left-[280px]">
+					<div className="absolute top-[510px] left-[278px]">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							fill="none"
 							viewBox="0 0 64 64"
-							className="w-9 h-9 bg-black rounded-lg"
+							className="w-[35px] h-[36px] bg-black rounded-lg"
 						>
 							<rect width="64" height="64" fill="black" rx="15"></rect>
 							<path
@@ -189,12 +189,12 @@ export default function HeroSection() {
 						</svg>
 					</div>
 
-					<div className="absolute top-[752px] left-[574px]">
+					<div className="absolute top-[758px] left-[572px]">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							fill="none"
 							viewBox="0 0 64 64"
-							className="w-9 h-9 bg-black rounded-lg"
+							className="w-[36px] h-[35px] bg-black rounded-lg"
 						>
 							<rect width="64" height="64" fill="black" rx="15"></rect>
 							<path fill="#bef264" d="m32 10-.3 1v29l.3.4 13.5-8L32 10Z"></path>
@@ -246,7 +246,7 @@ export default function HeroSection() {
 						</div>
 					</div>
 
-					<div className="absolute w-fit flex items-center h-fit p-4 text-left bg-white rounded-lg border border-gray-100 shadow shadow-gray-200 top-[690px] left-24">
+					<div className="absolute w-fit flex items-center h-fit p-4 text-left bg-white rounded-[8px] border border-gray-100 shadow shadow-gray-200 top-[690px] left-24">
 						<svg
 							stroke="currentColor"
 							fill="currentColor"
@@ -260,53 +260,53 @@ export default function HeroSection() {
 							<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
 						</svg>
 						<div>
-							<p className="text-gray-800 font-bold text-[13px] tracking-normal">
+							<p className="text-gray-700 font-bold text-[13px] tracking-tight">
 								Complete a project
 							</p>
-							<p className="text-gray-400 font-semibold text-[10px]">
+							<p className="text-gray-400 font-medium text-[10px]">
 								Get AI feedback for your code
 							</p>
 						</div>
-						<div className="bg-gradient-to-r ml-5 from-sky-500 to-cyan-400 px-1.5 py-0.5 rounded">
+						<div className="bg-gradient-to-r ml-5 from-sky-500 to-cyan-400 px-1.5 py-0.5 rounded-[3px]">
 							<p className="font-bold text-xs text-white">20 XP</p>
 						</div>
 					</div>
 
-					<div className="relative w-48 h-fit top-[80px] left-[830px]">
+					<div className="relative w-48 h-fit top-[82px] left-[822px]">
 						<Image
 							src={'/pp2.png'}
 							alt={''}
-							width={44}
-							height={44}
+							width={45}
+							height={45}
 							className="rounded-full border border-white"
 						/>
-						<div className="absolute top-7 left-7 h-9 w-9 border border-gray-100 rounded-full bg-white shadow shadow-gray-200 flex justify-center items-center">
-							<svg viewBox="0 0 22 28" className="h-6 w-6">
+						<div className="absolute top-7 left-7 p-1.5 border border-gray-100 rounded-full bg-white shadow shadow-gray-200">
+							<svg viewBox="0 0 22 28" className="h-[23px] w-[23px]">
 								<path d="M18.7 5.3v1L14 3.6c-1.8-1-4.3-1-6 0L3.3 6.3v-1c0-3 1.6-4.6 4.6-4.6H14c3 0 4.6 1.6 4.6 4.6Z"></path>
 								<path d="M18.8 8.6h-.2l-1.8-1.1L13 5.3c-1.1-.6-2.9-.6-4 0L5.2 7.5l-1.8 1-.2.2C.8 10.2.7 10.5.7 13v6c0 2.5.1 2.8 2.5 4.4L9 26.8a4 4 0 0 0 2 .5c.7 0 1.5-.1 2-.5l5.8-3.3c2.4-1.6 2.5-1.9 2.5-4.4v-6c0-2.6-.1-2.9-2.5-4.5Zm-4 7.4-.9 1a1 1 0 0 0-.2.6V19c.1.8-.4 1.2-1.2 1l-1.2-.6h-.6l-1.2.5c-.8.3-1.3-.1-1.3-1l.1-1.2c0-.2 0-.5-.2-.6l-.8-1c-.5-.6-.3-1.3.5-1.5l1.2-.3c.2 0 .4-.2.5-.4l.7-1c.5-.7 1.1-.7 1.6 0l.7 1c0 .2.3.4.5.4l1.2.3c.8.2 1 .9.5 1.5Z"></path>
 							</svg>
 						</div>
 					</div>
 
-					<div className="relative w-[200px] h-fit top-[320px] left-[20px]">
+					<div className="relative w-[200px] h-fit top-[326px] left-[18px]">
 						<Image
 							src={'/pp3.png'}
 							alt={''}
-							width={44}
-							height={44}
+							width={46}
+							height={46}
 							className="rounded-full border border-white"
 						/>
-						<div className="absolute w-fit h-fit px-1.5 text-left bg-white/90 rounded-sm border border-gray-100 shadow shadow-gray-200 top-10 left-2">
+						<div className="absolute w-fit h-fit px-1.5 text-left bg-white/90 rounded-sm border border-gray-100 shadow shadow-gray-200 top-[41px] left-3">
 							<p className="text-gray-600 font-semibold text-[10px]">
-								<span className="mr-1">&#128546;</span>Stuck
+								<span className="mr-0.5">&#128549;</span>Stuck
 							</p>
 						</div>
-						<div className="absolute w-fit h-fit px-1.5 text-left bg-white/90 rounded-sm border border-gray-100 shadow shadow-gray-200 top-[108px] left-[58px]">
+						<div className="absolute w-fit h-fit px-1.5 text-left bg-white/90 rounded-sm border border-gray-100 shadow shadow-gray-200 top-[106px] left-[60px]">
 							<p className="text-gray-600 font-semibold text-[10px]">
-								<span className="mr-1">&#128516;</span>Ask AI
+								<span className="mr-0.5">&#128516;</span>Ask AI
 							</p>
 						</div>
-						<div className="absolute top-[156px] left-[152px] p-1.5 border border-gray-100 rounded-xl bg-white shadow shadow-gray-200 flex justify-center items-center">
+						<div className="absolute top-[154px] left-[154px] p-1.5 border border-gray-100 rounded-xl bg-white shadow shadow-gray-200 flex justify-center items-center">
 							<svg
 								viewBox="0 0 28 28"
 								fill="currentColor"
@@ -318,23 +318,23 @@ export default function HeroSection() {
 						</div>
 					</div>
 
-					<div className="relative w-[180px] h-fit top-[360px] left-[1070px]">
+					<div className="relative w-[180px] h-fit top-[364px] left-[1070px]">
 						<Image
 							src={'/pp4.png'}
 							alt={''}
-							width={44}
-							height={44}
+							width={46}
+							height={46}
 							className="rounded-full border border-white"
 						/>
-						<div className="absolute w-fit h-fit px-1.5 text-left bg-white/90 rounded-sm border border-gray-100 shadow shadow-gray-200 top-9 left-2">
+						<div className="absolute w-fit h-fit px-1.5 text-left bg-white/90 rounded-sm border border-gray-100 shadow shadow-gray-200 top-[38px] left-[15px]">
 							<p className="text-gray-600 font-semibold text-[10px]">
-								<span className="mr-1">&#128218;</span>Practice
+								<span className="mr-0.5">&#128218;</span>Practice
 							</p>
 						</div>
 
 						<svg
 							viewBox="0 0 120 130"
-							className="absolute top-[90px] left-0 w-[90px] h-[90px]"
+							className="absolute top-[94px] left-0 w-[88px] h-[88px]"
 						>
 							<path
 								fill="#000"
@@ -346,8 +346,8 @@ export default function HeroSection() {
 							></path>
 						</svg>
 
-						<div className="absolute top-[200px] left-[52px] p-1.5 border border-gray-100 rounded-xl bg-white shadow shadow-gray-200 flex justify-center items-center">
-							<svg className="w-[22px] h-[22px]" viewBox="0 0 24 24">
+						<div className="absolute top-[205px] left-[52px] p-1 border border-gray-100 rounded-xl bg-white shadow shadow-gray-200 flex justify-center items-center">
+							<svg className="w-[24px] h-[24px]" viewBox="0 0 24 24">
 								<path d="M21 7c-.8-1-2.2-1.4-4.2-1.4h-.3c0-1.8 0-3.8-3.7-3.8h-1.6c-3.7 0-3.7 2-3.7 3.7h-.3C5.2 5.6 3.8 6 3 7c-1 1-1 2.6-.8 3.6v.9l.3.3a17.9 17.9 0 006.8 2.7c0 1 .5 2 2.7 2s2.6-1 2.7-2c2-.3 4-1 5.8-2l.1-.2 1.2-.8.2-.3v-.8c.2-1 .1-2.4-.8-3.4zm-8 6.8c0 1 0 1.3-1.1 1.3-1.3 0-1.3-.2-1.3-1.3v-1.2h2.5v1.2zM9 5.6c0-1.8 0-2.4 2.2-2.4h1.6c2.3 0 2.3.6 2.3 2.3H8.9z"></path>
 								<path d="M20.9 13.7c.3-.1.7.1.7.5l-.4 4c-.2 2-1 4-5.4 4H8.2c-4.4 0-5.2-2-5.4-4l-.4-3.7c0-.4.4-.7.7-.6 1.2.6 3.3 1.5 4.6 1.8l.3.3c.7 1.3 2 2 3.9 2s3.2-.7 3.8-2a34.6 34.6 0 005.2-2.3z"></path>
 							</svg>
