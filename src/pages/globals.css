@@ -22,7 +22,7 @@ main {
 	height: auto;
 }
 
-.bg-notebook-lines {
+.bg-small-grid-lines {
 	background-image: repeating-linear-gradient(
 			to bottom,
 			transparent,
@@ -38,4 +38,22 @@ main {
 			rgba(143, 143, 143, 0.1) 50px
 		);
 	background-size: 50px 50px;
+}
+
+.bg-big-grid-lines {
+	background-image: repeating-linear-gradient(
+			to bottom,
+			transparent,
+			transparent 149px,
+			rgba(143, 143, 143, 0.1) 149px,
+			rgba(143, 143, 143, 0.1) 150px
+		),
+		repeating-linear-gradient(
+			to right,
+			transparent,
+			transparent 149px,
+			rgba(143, 143, 143, 0.1) 149px,
+			rgba(143, 143, 143, 0.1) 150px
+		);
+	background-size: 150px 150px;
 }

@@ -2,9 +2,9 @@ import Link from 'next/link'
 
 export default function Footer() {
 	return (
-		<div className="relative w-full px-8 py-16 bg-zinc-50/75 border-t border-gray-200">
-			<div className="w-full flex justify-between ">
-				<div className="w-4/12 pr-6">
+		<div className="mx-auto max-w-screen-2xl px-4 bg-zinc-50/50 py-12 sm:px-6 lg:px-8 lg:py-16">
+			<div className="xl:grid xl:grid-cols-3 xl:gap-8">
+				<div className="w-full pr-6 sm:w-full">
 					<svg
 						xmlnsXlink="http://www.w3.org/1999/xlink"
 						viewBox="0 0 168 268"
@@ -124,9 +124,9 @@ export default function Footer() {
 						</Link>
 					</div>
 				</div>
-				<div className="w-8/12 flex justify-between">
-					<div className="flex justify-between">
-						<div className="w-[200px] pr-8">
+				<div className="w-full lg:8/12 mt-12 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+					<div className="md:grid md:grid-cols-2 md:gap-8">
+						<div className="">
 							<h3 className="uppercase text-sm font-semibold tracking-wider mb-4 text-zinc-700">
 								Solutions
 							</h3>
@@ -173,7 +173,7 @@ export default function Footer() {
 								</li>
 							</ul>
 						</div>
-						<div className="w-[200px] pr-8">
+						<div className="mt-12 md:mt-0">
 							<h3 className="uppercase text-sm font-semibold tracking-wider mb-4 text-zinc-700">
 								Resources
 							</h3>
@@ -245,8 +245,8 @@ export default function Footer() {
 							</ul>
 						</div>
 					</div>
-					<div className="flex justify-between">
-						<div className="w-[200px] pr-8">
+					<div className="md:grid md:grid-cols-2 md:gap-8">
+						<div className="">
 							<h3 className="uppercase text-sm font-semibold tracking-wider mb-4 text-zinc-700">
 								Company
 							</h3>
@@ -301,7 +301,7 @@ export default function Footer() {
 								</li>
 							</ul>
 						</div>
-						<div className="w-[200px] pr-8">
+						<div className="mt-12 md:mt-0">
 							<h3 className="uppercase text-sm font-semibold tracking-wider mb-4 text-zinc-700">
 								Popular
 							</h3>
