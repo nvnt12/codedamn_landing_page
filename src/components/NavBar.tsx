@@ -1,11 +1,38 @@
 import { BiChevronDown } from 'react-icons/bi'
 import Link from 'next/link'
+import LearnMenu from './LearnMenu'
+import PracticeMenu from './PracticeMenu'
+import CompanyMenu from './CompanyMenu'
+import { useState, useEffect } from 'react'
+import CompactMenu from './CompactMenu'
 
 export default function NavBar() {
+	const [animateHeader, setAnimateHeader] = useState(false)
+
+	useEffect(() => {
+		const listener = () => {
+			if (window.scrollY) {
+				setAnimateHeader(true)
+			} else setAnimateHeader(false)
+		}
+		window.addEventListener('scroll', listener)
+		return () => {
+			window.removeEventListener('scroll', listener)
+		}
+	}, [])
+
 	return (
-		<div className="flex items-center w-full sticky top-0 z-40 bg-gradient-to-t from-white/95 via-gray-100/95 to-white/95 bg-opacity-95 border-b border-b-gray-200">
-			<div className="mx-4 my-2.5 flex justify-between items-center w-full">
+		<div
+			className={`flex items-center w-full sticky top-0 z-40 bg-transparent ${
+				animateHeader &&
+				`bg-gradient-to-t from-white/95 via-gray-100/95 to-white/95 border-b border-b-gray-200`
+			}`}
+		>
+			<div className="mx-4 my-[11px] flex justify-between items-center w-full">
 				<Link className="flex items-center" href={'/'}>
+					<span className="md:hidden mr-1">
+						<CompactMenu />
+					</span>
 					<svg
 						className="mr-1"
 						height={28}
@@ -52,34 +79,31 @@ export default function NavBar() {
 							></path>
 						</g>
 					</svg>
-					<span className="hidden sm:block text-xl font-semibold text-gray-800">
+					<span className="hidden sm:block text-xl font-semibold text-gray-800 pr-[14px]">
 						codedamn
 					</span>
 				</Link>
 				<div className="hidden items-center md:flex">
 					<Link
-						className="text-sm font-semibold text-gray-500 mx-3.5 flex items-center hover:text-gray-600"
+						className="text-sm font-medium text-gray-600 mx-4 flex items-center hover:text-gray-900"
 						href={''}
 					>
-						Learn
-						<BiChevronDown className="h-5 w-5" />
+						<LearnMenu />
 					</Link>
 					<Link
-						className="text-sm font-semibold text-gray-500 mx-3.5 flex items-center hover:text-gray-600"
+						className="text-sm font-medium text-gray-600 mx-4 flex items-center hover:text-gray-900"
 						href={''}
 					>
-						Practice
-						<BiChevronDown className="h-5 w-5" />
+						<PracticeMenu />
 					</Link>
 					<Link
-						className="text-sm font-semibold text-gray-500 mx-3.5 flex items-center hover:text-gray-600"
+						className="text-sm font-medium text-gray-600 mx-4 flex items-center hover:text-gray-900"
 						href={''}
 					>
-						Company
-						<BiChevronDown className="h-5 w-5" />
+						<CompanyMenu />
 					</Link>
 					<Link
-						className="text-sm font-semibold text-gray-500 mx-3.5 flex items-center hover:text-gray-600"
+						className="text-sm font-medium text-gray-600 mx-4 flex items-center hover:text-gray-900"
 						href={''}
 					>
 						Pricing
@@ -88,14 +112,14 @@ export default function NavBar() {
 				<div className="flex items-center">
 					<Link
 						href={'/'}
-						className="text-sm font-semibold text-gray-500 mr-3 hover:text-gray-600"
+						className="text-sm font-medium text-gray-600 mr-3 hover:text-gray-900"
 					>
 						Login
 					</Link>
 					<Link href={'/'}>
 						<button
 							className={
-								' bg-indigo-600 hover:bg-indigo-700 py-2 px-2.5 text-white text-sm rounded-md font-semibold '
+								' bg-indigo-600 hover:bg-indigo-700 py-[7px] px-[11px] text-white text-sm rounded-md font-semibold '
 							}
 						>
 							Get Started

@@ -86,8 +86,8 @@ export default function Home() {
 						</div>
 					</div>
 
-					<div className="relative w-full h-full">
-						<div className="relative flex justify-center w-[50vw] h-[40vw] text-center sm:top-24 md:top-36 lg:top-48 left-1/4 px-4">
+					<div className="relative z-20 w-full h-full">
+						<div className="absolute flex justify-center w-[50vw] h-[40vw] text-center sm:top-24 md:top-36 lg:top-48 left-1/4 px-4">
 							<div className="flex-col h-full">
 								<h1 className="font-bold text-4xl md:text-5xl lg:text-[58px] leading-none tracking-tight text-gray-800 mt-12 mb-10">
 									Change the world
@@ -97,14 +97,18 @@ export default function Home() {
 									Learn coding with your personal AI powered tutor and 100+
 									interactive courses. Become job ready 10x faster.
 								</h2>
-								<button className=" text-sm md:text-base lg:text-lg font-semibold text-white bg-indigo-600 rounded-lg py-3.5 px-7 mb-12">
-									Begin your coding journey &rarr;
+
+								<button
+									type="button"
+									className="text-sm md:text-base lg:text-lg font-semibold text-white bg-gradient-to-tr from-indigo-600 to-indigo-400 rounded-lg py-3.5 px-7 mb-12 shadow-xl shadow-indigo-600/50"
+								>
+									Begin your coding journey
 								</button>
 							</div>
 						</div>
 					</div>
 
-					<div className="w-full h-[72vw]">
+					<div className="w-full hidden lg:block h-[72vw]">
 						<div className="absolute w-full h-full text-center top-0">
 							<div className="relative font-mono w-fit h-fit p-4 text-left bg-white rounded-lg border border-gray-100 shadow shadow-gray-200 top-[10.5vw] left-[16.5vw]">
 								<div className="absolute -top-[12px] left-[158px] w-fit h-fit">
@@ -277,7 +281,7 @@ export default function Home() {
 									<svg
 										stroke="currentColor"
 										fill="currentColor"
-										stroke-width="0"
+										strokeWidth="0"
 										viewBox="0 0 16 16"
 										height="1em"
 										width="1em"
@@ -296,7 +300,7 @@ export default function Home() {
 								<svg
 									stroke="currentColor"
 									fill="currentColor"
-									stroke-width="0"
+									strokeWidth="0"
 									viewBox="0 0 16 16"
 									className="h-6 w-6 fill-sky-400 rounded-full ring-[3px] ring-sky-400 ring-offset-1 mr-4"
 									height="1em"
@@ -587,10 +591,10 @@ export default function Home() {
 							courses, and receive 24x7 AI assistance as you develop your coding
 							skills.
 						</span>
-						<div className="w-full h-fit lg:h-[380px] flex flex-col-reverse lg:flex-row md:px-28 lg:px-0">
-							<div className="lg:w-3/6 flex justify-center relative w-full sm:px-2 max-w-3/6 py-10 md:py-16 h-fit scale-75 xs:scale-90 sm:scale-100 md:scale-x-110 md:scale-y-110 lg:scale-100">
+						<div className="w-full h-fit lg:h-[380px] flex flex-col-reverse lg:flex-row px-px md:px-28 lg:px-0">
+							<div className="lg:w-3/6 flex justify-center relative w-full sm:px-1 max-w-3/6 py-10 md:py-16 h-fit scale-[60%] xxs:scale-75 xs:scale-90 sm:scale-[98%] md:scale-x-110 md:scale-y-110 lg:scale-100">
 								<div className="relative p-1">
-									<div className="w-[480px] aspect-video h-[288px] px-5 py-5">
+									<div className="w-[480px] h-[288px] px-5 py-5">
 										<div className="w-full h-full flex overflow-clip rounded-md bg-white shadow-2xl">
 											<div className="w-3/5 h-full">
 												<div className="w-full h-[12%] flex">
@@ -696,7 +700,7 @@ export default function Home() {
 													<span className="relative top-[90px] font-mono text-lg text-gray-800 font-extrabold">
 														Learn + Practice
 													</span>
-													<div className="relative top-[166px] w-full h-fit gap-[2px] p-px grid grid-cols-12 ">
+													<div className="relative top-[168px] w-full h-fit gap-[2px] p-px grid grid-cols-12 ">
 														<div className="w-[12px] h-[12px] bg-red-500"></div>
 														<div className="w-[12px] h-[12px] bg-transparent"></div>
 														<div className="w-[12px] h-[12px] bg-transparent"></div>
@@ -726,11 +730,11 @@ export default function Home() {
 											</div>
 										</div>
 									</div>
-									<div className="absolute aspect-video w-max h-fit right-0 top-0 shadow-2xl flex justify-center items-center rounded-md overflow-clip">
+									<div className="absolute w-max h-fit right-0 top-0 shadow-2xl flex justify-center items-center rounded-md overflow-clip">
 										<svg
 											stroke="currentColor"
 											fill="currentColor"
-											stroke-width="0"
+											strokeWidth="0"
 											viewBox="0 0 16 16"
 											className="absolute z-20 w-8 h-8 fill-white"
 											height="1em"
@@ -747,7 +751,7 @@ export default function Home() {
 											className=""
 										/>
 									</div>
-									<div className="absolute aspect-video w-[176px] h-[86px] bottom-0 left-0 bg-zinc-700 shadow-2xl rounded text-center">
+									<div className="absolute w-[176px] h-[86px] bottom-0 left-0 bg-zinc-700 shadow-2xl rounded text-center">
 										<p className="p-2 text-white font-medium text-[13px]">
 											<span className="font-bold text-sm">6</span>/6
 											challenges completed
@@ -809,10 +813,10 @@ export default function Home() {
 								</div>
 							</div>
 						</div>
-						<div className="w-full h-fit lg:h-[380px] flex flex-col-reverse lg:flex-row md:px-28 lg:px-0">
-							<div className="lg:w-3/6 flex justify-center relative w-full sm:px-2 max-w-3/6 py-10 md:py-16 h-fit scale-75 xs:scale-90 sm:scale-100 md:scale-x-110 md:scale-y-110 lg:scale-100">
+						<div className="w-full h-fit lg:h-[380px] flex flex-col-reverse lg:flex-row px-px md:px-28 lg:px-0">
+							<div className="lg:w-3/6 flex justify-center relative w-full sm:px-1 max-w-3/6 py-10 md:py-16 h-fit scale-[60%] xxs:scale-75 xs:scale-90 sm:scale-100 md:scale-x-110 md:scale-y-110 lg:scale-100">
 								<div className="relative p-1">
-									<div className="relative w-[480px] aspect-video h-[288px] px-5 py-5">
+									<div className="relative w-[480px] h-[288px] px-5 py-5">
 										<div className="w-full h-full flex flex-auto overflow-clip rounded-md bg-white shadow-2xl">
 											<div className="w-3/5 h-full">
 												<div className="w-full h-[12%] flex">
@@ -931,12 +935,12 @@ export default function Home() {
 													</div>
 												</div>
 												<div className="w-full h-full text-center bg-gray-50 ">
-													<div className="relative top-[166px] w-full h-14 p-px bg-zinc-700"></div>
+													<div className="relative top-[168px] w-full h-14 p-px bg-zinc-700"></div>
 												</div>
 											</div>
 										</div>
 									</div>
-									<div className="absolute aspect-video w-[200px] h-[86px] right-0 top-0 bg-zinc-700 rounded shadow-2xl py-2 px-3">
+									<div className="absolute w-[200px] h-[86px] right-0 top-0 bg-zinc-700 rounded shadow-2xl py-2 px-3">
 										<p className=" text-white font-normal text-[13px] mb-0.5">
 											I&apos;m stuck, please help me with this challenge.
 										</p>
@@ -958,7 +962,7 @@ export default function Home() {
 											</p>
 										</div>
 									</div>
-									<div className="absolute aspect-video w-[200px] h-[86px] left-0 bottom-0 bg-white border py-2 px-3 border-gray-200 shadow-2xl rounded text-left">
+									<div className="absolute w-[200px] h-[86px] left-0 bottom-0 bg-white border py-2 px-3 border-gray-200 shadow-2xl rounded text-left">
 										<p className=" text-gray-900 font-normal text-[13px] mb-0.5">
 											Sure, Convert the params using the str&#40;&#41;
 											function.
@@ -986,14 +990,14 @@ export default function Home() {
 							<div className="w-full lg:w-fit h-full flex flex-col items-center order-1 lg:order-none">
 								<div className="h-28 w-px lg:border-l bg-gradient-to-b from-white via-gray-500 to-gray-600 lg:border-gray-600 lg:border-dashed"></div>
 								<div className="w-[11px] h-[11px] border rounded-full border-gray-600 my-1"></div>
-								<div className="h-72 w-px hidden lg:block bg-gradient-to-b from-gray-600 via-sky-600 to-sky-500 "></div>
+								<div className="h-72 w-px hidden lg:block bg-gradient-to-b from-gray-600 via-sky-600 to-sky-500"></div>
 							</div>
 							<div className="relative w-full lg:w-3/6 px-14 lg:py-16 flex flex-col items-center top-0 text-center lg:text-left">
 								<div className="py-3 lg:py-6 max-w-xl flex flex-col items-center lg:items-start">
 									<svg
 										stroke="currentColor"
 										fill="url(#LearnSvgGradient)"
-										stroke-width="0"
+										strokeWidth="0"
 										viewBox="0 0 16 16"
 										className="h-8 w-8"
 										height="1em"
@@ -1031,357 +1035,358 @@ export default function Home() {
 							keep improving with detailed feedback on your code - generated by
 							state-of-the-art AI.
 						</span>
-						<div className="flex flex-col w-full lg:justify-center items-center lg:flex-row">
-							<div className="relative w-full px-2 sm:px-6 max-w-xl py-10 md:py-28 h-fit scale-75 xs:scale-90 sm:scale-100 md:scale-x-110 md:scale-y-110 lg:scale-100">
-								<div className="relative px-2">
-									<div className="relative flex aspect-2 w-full max-w-[90%] flex-1 overflow-hidden rounded-sm border border-gray-400/20 shadow-xl">
-										<div className="flex-[7%] bg-zinc-700 flex flex-col justify-between items-center">
-											<div className="py-4">
-												<BsFillFileEarmarkCodeFill className="w-3.5 h-3.5 fill-white mb-2" />
-												<BsSearch className="w-3.5 h-3.5 fill-white mb-2" />
-												<MdOutlineComment className="w-3.5 h-3.5 fill-white mb-2" />
-											</div>
-											<div className="py-3">
-												<SlSettings className="w-3.5 h-3.5 fill-white" />
-											</div>
-										</div>
-										<div className="w-3/5 h-full">
-											<div className="w-full h-[8%] flex">
-												<div className="flex items-center px-2 h-full w-fit border-b border-gray-200">
-													<span className="text-[9px] text-gray-500 font-normal">
-														Tesla.jsx
-													</span>
+						<div className="flex flex-col items-center w-full lg:justify-center lg:flex-row py-10 md:py-20">
+							<div className="relative flex justify-center w-[660px] h-[500px] lg:w-3/6 px-2 sm:px-6 scale-[60%] xxs:scale-[75%] xs:scale-[85%] sm:scale-90 md:scale-100 lg:scale-100">
+								<div className="max-w-xl h-fit">
+									<div className="relative px-2 h-full bg-white">
+										<div className="relative flex h-[229px] w-full max-w-[90%] flex-1 overflow-hidden rounded-sm border border-gray-400/20 shadow-xl">
+											<div className="flex-[6%] xs:flex-[7%] bg-zinc-700 flex flex-col justify-between items-center">
+												<div className="py-4">
+													<BsFillFileEarmarkCodeFill className="w-3.5 h-3.5 fill-white mb-2" />
+													<BsSearch className="w-3.5 h-3.5 fill-white mb-2" />
+													<MdOutlineComment className="w-3.5 h-3.5 fill-white mb-2" />
 												</div>
-												<div className="flex items-center bg-gray-100 px-2.5 h-full w-fit border-x border-gray-200">
-													<span className="text-[9px] text-gray-500 font-normal">
-														globals.css
-													</span>
+												<div className="py-3">
+													<SlSettings className="w-3.5 h-3.5 fill-white" />
 												</div>
-												<div className="w-full h-full border-b border-gray-200"></div>
 											</div>
-											<div className="w-full flex h-full">
-												<div className="w-fit h-full flex flex-col font-mono -none">
-													<span className=" px-1.5 text-[13px] text-gray-400 bg-gray-50">
-														01
-													</span>
-													<span className=" px-1.5 text-[13px] text-gray-400 bg-gray-50">
-														02
-													</span>
-													<span className=" px-1.5 text-[13px] text-gray-400 bg-gray-50">
-														03
-													</span>
-													<span className=" px-1.5 text-[13px] text-gray-400 bg-gray-50">
-														04
-													</span>
-													<span className=" px-1.5 text-[13px] text-gray-400 bg-gray-50">
-														05
-													</span>
-													<span className=" px-1.5 text-[13px] text-gray-400 bg-gray-50">
-														06
-													</span>
-													<span className=" px-1.5 text-[13px] text-gray-400 bg-gray-50">
-														07
-													</span>
-													<span className=" px-1.5 text-[13px] text-gray-400 bg-gray-50">
-														08
-													</span>
-													<span className=" px-1.5 text-[13px] text-gray-400 bg-gray-50">
-														09
-													</span>
-													<span className=" px-1.5 text-[13px] text-gray-400 bg-gray-50">
-														10
-													</span>
-													<span className=" px-1.5 text-[13px] text-gray-400 bg-gray-50">
-														11
-													</span>
-												</div>
-												<code className="w-full tracking-tight px-2 text-[13px] text-left">
-													<span className="font-normal text-gray-500">
-														&#47;&#47;&nbsp;Tesla clone project
-													</span>
-													<span className="block text-gray-500">
-														....
-													</span>
-													<span className="font-normal">
-														&#60;
-														<span className="font-semibold text-sky-500">
-															Layout
+											<div className="w-3/5 h-full">
+												<div className="w-full h-[8%] flex">
+													<div className="flex items-center px-2 h-full w-fit border-b border-gray-200">
+														<span className="text-[9px] text-gray-500 font-normal">
+															Tesla.jsx
 														</span>
-														&#62;
-													</span>
+													</div>
+													<div className="flex items-center bg-gray-100 px-2.5 h-full w-fit border-x border-gray-200">
+														<span className="text-[9px] text-gray-500 font-normal">
+															globals.css
+														</span>
+													</div>
+													<div className="w-full h-full border-b border-gray-200"></div>
+												</div>
+												<div className="w-full flex h-full">
+													<div className="w-fit h-full flex flex-col font-mono overflow-y-hidden">
+														<span className=" px-1.5 text-[13px] text-gray-400 bg-gray-50">
+															01
+														</span>
+														<span className=" px-1.5 text-[13px] text-gray-400 bg-gray-50">
+															02
+														</span>
+														<span className=" px-1.5 text-[13px] text-gray-400 bg-gray-50">
+															03
+														</span>
+														<span className=" px-1.5 text-[13px] text-gray-400 bg-gray-50">
+															04
+														</span>
+														<span className=" px-1.5 text-[13px] text-gray-400 bg-gray-50">
+															05
+														</span>
+														<span className=" px-1.5 text-[13px] text-gray-400 bg-gray-50">
+															06
+														</span>
+														<span className=" px-1.5 text-[13px] text-gray-400 bg-gray-50">
+															07
+														</span>
+														<span className=" px-1.5 text-[13px] text-gray-400 bg-gray-50">
+															08
+														</span>
+														<span className=" px-1.5 text-[13px] text-gray-400 bg-gray-50">
+															09
+														</span>
+														<span className=" px-1.5 text-[13px] text-gray-400 bg-gray-50">
+															10
+														</span>
+														<span className=" px-1.5 text-[13px] text-gray-400 bg-gray-50">
+															11
+														</span>
+													</div>
+													<code className="w-full tracking-tight px-2 xs:text-[13px] text-left text-[12px]">
+														<span className="font-normal text-gray-500">
+															&#47;&#47;&nbsp;Tesla clone project
+														</span>
+														<span className="block text-gray-500">
+															....
+														</span>
+														<span className="font-normal">
+															&#60;
+															<span className="font-semibold text-sky-500">
+																Layout
+															</span>
+															&#62;
+														</span>
 
-													<span className="block font-normal">
-														&emsp;&emsp;&#60;
-														<span className="font-semibold text-sky-500">
-															Container
-														</span>
-														&#62;
-													</span>
-													<span className="font-normal block">
-														&emsp;&emsp;&emsp;&emsp;&#60;
-														<span className="font-semibold text-sky-500">
-															Hero&nbsp;
-															<span className="font-normal text-gray-700">
-																feature&#61;&#34;model-3&#34;&#47;
+														<span className="block font-normal">
+															&emsp;&emsp;&#60;
+															<span className="font-semibold text-sky-500">
+																Container
 															</span>
+															&#62;
 														</span>
-														&#62;
-													</span>
-													<span className="font-normal block">
-														&emsp;&emsp;&#60;
-														<span className="font-semibold text-sky-500">
-															<span className="font-normal text-gray-700">
-																&#47;
+														<span className="font-normal block">
+															&emsp;&emsp;&emsp;&emsp;&#60;
+															<span className="font-semibold text-sky-500">
+																Hero&nbsp;
+																<span className="font-normal text-gray-700">
+																	feature&#61;&#34;model-3&#34;&#47;
+																</span>
 															</span>
-															Container
+															&#62;
 														</span>
-														&#62;
-													</span>
-													<span className="font-normal block">
-														&#60;
-														<span className="font-semibold text-sky-500">
-															<span className="font-normal text-gray-700">
-																&#47;
+														<span className="font-normal block">
+															&emsp;&emsp;&#60;
+															<span className="font-semibold text-sky-500">
+																<span className="font-normal text-gray-700">
+																	&#47;
+																</span>
+																Container
 															</span>
-															Layout
+															&#62;
 														</span>
-														&#62;
-													</span>
-													<span className="block text-gray-500">
-														....
-													</span>
-												</code>
-											</div>
-										</div>
-										<div className=" w-2/5 h-full border-l border-gray-200 ">
-											<div className="w-full h-[8%] flex border-b border-gray-200">
-												<div className="flex items-center pl-2 h-full w-fit">
-													<HiArrowNarrowLeft className="fill-gray-500 h-3 w-3" />
-												</div>
-												<div className="p-1 w-full">
-													<div className="w-full h-[4px] rounded-sm bg-zinc-300"></div>
-												</div>
-												<div className="flex items-center pl-1 h-full w-fit">
-													<BiRefresh className="fill-gray-500 h-3 w-3" />
+														<span className="font-normal block">
+															&#60;
+															<span className="font-semibold text-sky-500">
+																<span className="font-normal text-gray-700">
+																	&#47;
+																</span>
+																Layout
+															</span>
+															&#62;
+														</span>
+														<span className="block text-gray-500">
+															....
+														</span>
+													</code>
 												</div>
 											</div>
-											<div className="w-full h-[92%] text-center">
-												<Image
-													src={'/tesla-model.png'}
-													alt={'Tesla model 3'}
-													width={400}
-													height={400}
-													className="w-auto h-auto"
-												/>
+											<div className=" w-2/5 h-full border-l border-gray-200 ">
+												<div className="w-full h-[8%] flex border-b border-gray-200">
+													<div className="flex items-center pl-2 h-full w-fit">
+														<HiArrowNarrowLeft className="fill-gray-500 h-3 w-3" />
+													</div>
+													<div className="p-1 w-full">
+														<div className="w-full h-[4px] rounded-sm bg-zinc-300"></div>
+													</div>
+													<div className="flex items-center pl-1 h-full w-fit">
+														<BiRefresh className="fill-gray-500 h-3 w-3" />
+													</div>
+												</div>
+												<div className="w-full h-[92%] text-center">
+													<Image
+														src={'/tesla-model.png'}
+														alt={'Tesla model 3'}
+														width={400}
+														height={400}
+														className="w-auto h-auto"
+													/>
+												</div>
 											</div>
 										</div>
 									</div>
-								</div>
-								<div className="relative w-full h-full px-5">
-									<div className="relative left-[10%] -mt-[10%] mb-[10%] flex aspect-2 w-full max-w-[90%] flex-1 overflow-hidden rounded-sm border border-gray-400/30 bg-white shadow-xl p-[3%]">
-										<div className="w-2/5 h-full">
-											<div className="w-full h-fit bg-zinc-50/50 p-3 mb-3">
-												<span className="uppercase block font-mono font-semibold text-xs text-zinc-800 mb-2">
-													Suggestions
-												</span>
-												<div className="w-full h-[3px] bg-zinc-300 mb-2"></div>
-												<div className="w-full h-[3px] bg-zinc-300 mb-2"></div>
-												<div className="w-full h-[3px] bg-zinc-300 mb-2"></div>
-												<div className="w-full h-[3px] bg-zinc-300 mb-2"></div>
-												<div className="w-full h-[3px] bg-zinc-300 mb-2"></div>
-												<div className="w-4/5 h-[3px] bg-zinc-300"></div>
-											</div>
-											<div className="w-full h-fit bg-zinc-50/50 p-3">
-												<span className="uppercase block font-mono font-semibold text-xs text-zinc-800 mb-2">
-													Summary
-												</span>
-												<div className="w-full h-[3px] bg-zinc-300 mb-2"></div>
-												<div className="w-full h-[3px] bg-zinc-300 mb-2"></div>
-												<div className="w-4/5 h-[3px] bg-zinc-300"></div>
-											</div>
-										</div>
-										<div className="w-3/5 h-full">
-											<div className="w-full bg-zinc-50/50 p-3">
-												<span className="uppercase block font-mono font-semibold text-xs text-zinc-800 mb-2">
-													Code analysis
-												</span>
-												<div className="w-full h-8 mb-2 flex justify-start items-center">
-													<span className="text-base mr-1 font-mono font-bold text-amber-400">
-														4.5
+									<div className="relative px-2">
+										<div className="relative left-[10%] -mt-[10%] flex w-full max-w-[90%] flex-1 overflow-hidden rounded-sm border border-gray-400/30 bg-white shadow-xl p-[3%]">
+											<div className="w-2/5 h-full">
+												<div className="w-full h-fit bg-zinc-50/50 p-3 mb-3">
+													<span className="uppercase block font-mono font-semibold text-xs text-zinc-800 mb-2">
+														Suggestions
 													</span>
-													<svg
-														width="80"
-														height="16"
-														viewBox="0 0 70 14"
-														xmlns="http://www.w3.org/2000/svg"
-													>
-														<defs>
-															<symbol
-																id="icon-rating-star-:r0:"
-																viewBox="0 0 24 24"
-															>
-																<path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"></path>
-															</symbol>
-														</defs>
-														<mask
-															id="star-rating-mask-:r0:"
-															data-purpose="star-rating-mask"
-														>
-															<rect
-																x="0"
-																y="0"
-																width="90%"
-																height="100%"
-																fill="white"
-															></rect>
-														</mask>
-														<g
-															fill="rgb(250 204 21)"
-															mask="url(#star-rating-mask-:r0:)"
-															data-purpose="star-filled"
-														>
-															<use
-																xlinkHref="#icon-rating-star-:r0:"
-																width="14"
-																height="14"
-																x="0"
-															></use>
-															<use
-																xlinkHref="#icon-rating-star-:r0:"
-																width="14"
-																height="14"
-																x="14"
-															></use>
-															<use
-																xlinkHref="#icon-rating-star-:r0:"
-																width="14"
-																height="14"
-																x="28"
-															></use>
-															<use
-																xlinkHref="#icon-rating-star-:r0:"
-																width="14"
-																height="14"
-																x="42"
-															></use>
-															<use
-																xlinkHref="#icon-rating-star-:r0:"
-																width="14"
-																height="14"
-																x="56"
-															></use>
-														</g>
-														<g
-															fill="transparent"
-															stroke="rgb(250 204 21)"
-															stroke-width="2"
-															data-purpose="star-bordered"
-														>
-															<use
-																xlinkHref="#icon-rating-star-:r0:"
-																width="12"
-																height="12"
-																x="1"
-																y="1"
-															></use>
-															<use
-																xlinkHref="#icon-rating-star-:r0:"
-																width="12"
-																height="12"
-																x="15"
-																y="1"
-															></use>
-															<use
-																xlinkHref="#icon-rating-star-:r0:"
-																width="12"
-																height="12"
-																x="29"
-																y="1"
-															></use>
-															<use
-																xlinkHref="#icon-rating-star-:r0:"
-																width="12"
-																height="12"
-																x="43"
-																y="1"
-															></use>
-															<use
-																xlinkHref="#icon-rating-star-:r0:"
-																width="12"
-																height="12"
-																x="57"
-																y="1"
-															></use>
-														</g>
-													</svg>
+													<div className="w-full h-[3px] bg-zinc-300 mb-2"></div>
+													<div className="w-full h-[3px] bg-zinc-300 mb-2"></div>
+													<div className="w-full h-[3px] bg-zinc-300 mb-2"></div>
+													<div className="w-full h-[3px] bg-zinc-300 mb-2"></div>
+													<div className="w-full h-[3px] bg-zinc-300 mb-2"></div>
+													<div className="w-4/5 h-[3px] bg-zinc-300"></div>
 												</div>
-												<div className="w-full h-fit mb-2">
-													<div className="w-full h-fit flex">
-														<span className="block w-14 font-mono font-semibold text-[9px] text-zinc-800 mb-0.5">
-															Performance
-														</span>
-														<div className="relative w-32 h-full flex p-1">
-															<div className="w-full h-[6px] rounded-full bg-zinc-200 border border-gray-200"></div>
-															<div className="absolute w-[78%] h-[6px] rounded-full bg-amber-400"></div>
-														</div>
-														<span className="block font-mono font-semibold text-[9px] text-zinc-800 mb-0.5">
-															87&#37;
-														</span>
-													</div>
-													<div className="w-full h-fit flex">
-														<span className="block w-14 font-mono font-semibold text-[9px] text-zinc-800 mb-0.5">
-															Security
-														</span>
-														<div className="relative w-32 h-full flex p-1">
-															<div className="w-full h-[6px] rounded-full bg-zinc-200 border border-gray-200"></div>
-															<div className="absolute w-[70%] h-[6px] rounded-full bg-amber-400"></div>
-														</div>
-														<span className="block font-mono font-semibold text-[9px] text-zinc-800 mb-0.5">
-															78&#37;
-														</span>
-													</div>
-													<div className="w-full h-fit flex">
-														<span className="block w-14 font-mono font-semibold text-[9px] text-zinc-800 mb-0.5">
-															Readability
-														</span>
-														<div className="relative w-32 h-full flex p-1">
-															<div className="w-full h-[6px] rounded-full bg-zinc-200 border border-gray-200"></div>
-															<div className="absolute w-[85%] h-[6px] rounded-full bg-amber-400"></div>
-														</div>
-														<span className="block font-mono font-semibold text-[9px] text-zinc-800 mb-0.5">
-															92&#37;
-														</span>
-													</div>
-													<div className="w-full h-fit flex">
-														<span className="block w-14 font-mono font-semibold text-[9px] text-zinc-800 mb-2">
-															Accuracy
-														</span>
-														<div className="relative w-32 h-full flex p-1">
-															<div className="w-full h-[6px] rounded-full bg-zinc-200 border border-gray-200"></div>
-															<div className="absolute w-[80%] h-[6px] rounded-full bg-amber-400"></div>
-														</div>
-														<span className="block font-mono font-semibold text-[9px] text-zinc-800 mb-2">
-															89&#37;
-														</span>
-													</div>
+												<div className="w-full h-fit bg-zinc-50/50 p-3">
+													<span className="uppercase block font-mono font-semibold text-xs text-zinc-800 mb-2">
+														Summary
+													</span>
+													<div className="w-full h-[3px] bg-zinc-300 mb-2"></div>
+													<div className="w-full h-[3px] bg-zinc-300 mb-2"></div>
+													<div className="w-4/5 h-[3px] bg-zinc-300"></div>
 												</div>
 											</div>
-											<div className="w-full text-center">
-												<span className="w-full block text-[9px] rounded font-mono py-2 bg-zinc-700 text-white">
-													Generated by codedamn AI in 10 mins
-												</span>
+											<div className="w-3/5 h-full">
+												<div className="w-full bg-zinc-50/50 p-3">
+													<span className="uppercase block font-mono font-semibold text-xs text-zinc-800 mb-2">
+														Code analysis
+													</span>
+													<div className="w-full h-8 mb-2 flex justify-start items-center">
+														<span className="text-base mr-1 font-mono font-bold text-amber-400">
+															4.5
+														</span>
+														<svg
+															width="80"
+															height="16"
+															viewBox="0 0 70 14"
+															xmlns="http://www.w3.org/2000/svg"
+														>
+															<defs>
+																<symbol
+																	id="icon-rating-star-:r0:"
+																	viewBox="0 0 24 24"
+																>
+																	<path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"></path>
+																</symbol>
+															</defs>
+															<mask
+																id="star-rating-mask-:r0:"
+																data-purpose="star-rating-mask"
+															>
+																<rect
+																	x="0"
+																	y="0"
+																	width="90%"
+																	height="100%"
+																	fill="white"
+																></rect>
+															</mask>
+															<g
+																fill="rgb(250 204 21)"
+																mask="url(#star-rating-mask-:r0:)"
+																data-purpose="star-filled"
+															>
+																<use
+																	xlinkHref="#icon-rating-star-:r0:"
+																	width="14"
+																	height="14"
+																	x="0"
+																></use>
+																<use
+																	xlinkHref="#icon-rating-star-:r0:"
+																	width="14"
+																	height="14"
+																	x="14"
+																></use>
+																<use
+																	xlinkHref="#icon-rating-star-:r0:"
+																	width="14"
+																	height="14"
+																	x="28"
+																></use>
+																<use
+																	xlinkHref="#icon-rating-star-:r0:"
+																	width="14"
+																	height="14"
+																	x="42"
+																></use>
+																<use
+																	xlinkHref="#icon-rating-star-:r0:"
+																	width="14"
+																	height="14"
+																	x="56"
+																></use>
+															</g>
+															<g
+																fill="transparent"
+																stroke="rgb(250 204 21)"
+																strokeWidth="2"
+																data-purpose="star-bordered"
+															>
+																<use
+																	xlinkHref="#icon-rating-star-:r0:"
+																	width="12"
+																	height="12"
+																	x="1"
+																	y="1"
+																></use>
+																<use
+																	xlinkHref="#icon-rating-star-:r0:"
+																	width="12"
+																	height="12"
+																	x="15"
+																	y="1"
+																></use>
+																<use
+																	xlinkHref="#icon-rating-star-:r0:"
+																	width="12"
+																	height="12"
+																	x="29"
+																	y="1"
+																></use>
+																<use
+																	xlinkHref="#icon-rating-star-:r0:"
+																	width="12"
+																	height="12"
+																	x="43"
+																	y="1"
+																></use>
+																<use
+																	xlinkHref="#icon-rating-star-:r0:"
+																	width="12"
+																	height="12"
+																	x="57"
+																	y="1"
+																></use>
+															</g>
+														</svg>
+													</div>
+													<div className="w-full h-fit mb-2">
+														<div className="w-full h-fit flex">
+															<span className="block w-14 font-mono font-semibold text-[9px] text-zinc-800 mb-0.5">
+																Performance
+															</span>
+															<div className="relative w-32 h-full flex p-1">
+																<div className="w-full h-[6px] rounded-full bg-zinc-200 border border-gray-200"></div>
+																<div className="absolute w-[78%] h-[6px] rounded-full bg-amber-400"></div>
+															</div>
+															<span className="block font-mono font-semibold text-[9px] text-zinc-800 mb-0.5">
+																87&#37;
+															</span>
+														</div>
+														<div className="w-full h-fit flex">
+															<span className="block w-14 font-mono font-semibold text-[9px] text-zinc-800 mb-0.5">
+																Security
+															</span>
+															<div className="relative w-32 h-full flex p-1">
+																<div className="w-full h-[6px] rounded-full bg-zinc-200 border border-gray-200"></div>
+																<div className="absolute w-[70%] h-[6px] rounded-full bg-amber-400"></div>
+															</div>
+															<span className="block font-mono font-semibold text-[9px] text-zinc-800 mb-0.5">
+																78&#37;
+															</span>
+														</div>
+														<div className="w-full h-fit flex">
+															<span className="block w-14 font-mono font-semibold text-[9px] text-zinc-800 mb-0.5">
+																Readability
+															</span>
+															<div className="relative w-32 h-full flex p-1">
+																<div className="w-full h-[6px] rounded-full bg-zinc-200 border border-gray-200"></div>
+																<div className="absolute w-[85%] h-[6px] rounded-full bg-amber-400"></div>
+															</div>
+															<span className="block font-mono font-semibold text-[9px] text-zinc-800 mb-0.5">
+																92&#37;
+															</span>
+														</div>
+														<div className="w-full h-fit flex">
+															<span className="block w-14 font-mono font-semibold text-[9px] text-zinc-800 mb-2">
+																Accuracy
+															</span>
+															<div className="relative w-32 h-full flex p-1">
+																<div className="w-full h-[6px] rounded-full bg-zinc-200 border border-gray-200"></div>
+																<div className="absolute w-[80%] h-[6px] rounded-full bg-amber-400"></div>
+															</div>
+															<span className="block font-mono font-semibold text-[9px] text-zinc-800 mb-2">
+																89&#37;
+															</span>
+														</div>
+													</div>
+												</div>
+												<div className="w-full text-center">
+													<span className="w-full block text-[9px] rounded font-mono py-2 bg-zinc-700 text-white">
+														Generated by codedamn AI in 10 mins
+													</span>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-
-							<div className="relative w-full flex flex-col items-center lg:w-3/6 h-full px-10 sm:px-12 pb-8 lg:px-16 lg:py-16">
+							<div className="relative w-full flex flex-col items-center lg:w-3/6 h-full px-10 sm:px-12 pb-8 xl:px-16 lg:py-16">
 								<div className="pt-6 pb-9 lg:pr-4 max-w-xl  flex flex-col items-center lg:items-start lg:text-left text-center">
 									<svg
 										stroke="currentColor"
 										fill="url(#ApplySvgGradient)"
-										stroke-width="0"
+										strokeWidth="0"
 										viewBox="0 0 16 16"
 										className="h-8 w-8"
 										height="1em"
@@ -1404,7 +1409,7 @@ export default function Home() {
 									<svg
 										stroke="currentColor"
 										fill="url(#ApplySvgGradient)"
-										stroke-width="0"
+										strokeWidth="0"
 										viewBox="0 0 16 16"
 										className="h-8 w-8"
 										height="1em"
@@ -1427,7 +1432,7 @@ export default function Home() {
 									<svg
 										stroke="currentColor"
 										fill="url(#ApplySvgGradient)"
-										stroke-width="0"
+										strokeWidth="0"
 										viewBox="0 0 16 16"
 										className="h-8 w-9"
 										height="1em"
@@ -1702,8 +1707,8 @@ export default function Home() {
 												y2="233"
 												gradientUnits="userSpaceOnUse"
 											>
-												<stop stop-color="#387EB8"></stop>
-												<stop offset="1" stop-color="#366994"></stop>
+												<stop stopColor="#387EB8"></stop>
+												<stop offset="1" stopColor="#366994"></stop>
 											</linearGradient>
 											<linearGradient
 												id="b"
@@ -1713,8 +1718,8 @@ export default function Home() {
 												y2="364"
 												gradientUnits="userSpaceOnUse"
 											>
-												<stop stop-color="#FFE052"></stop>
-												<stop offset="1" stop-color="#FFC331"></stop>
+												<stop stopColor="#FFE052"></stop>
+												<stop offset="1" stopColor="#FFC331"></stop>
 											</linearGradient>
 										</defs>
 									</svg>
@@ -1835,7 +1840,7 @@ export default function Home() {
 									<svg
 										stroke="currentColor"
 										fill="url(#GrowSvgGradient)"
-										stroke-width="0"
+										strokeWidth="0"
 										viewBox="0 0 16 16"
 										className="h-8 w-9"
 										height="1em"
@@ -1858,7 +1863,7 @@ export default function Home() {
 									<svg
 										className="h-8 w-9"
 										fill="#84cc16"
-										stroke-width="2"
+										strokeWidth="2"
 										stroke="url(#GrowSvgGradient)"
 										viewBox="0 0 64 64"
 									>
@@ -2372,7 +2377,7 @@ export default function Home() {
 						<h4 className="uppercase text-center text-base font-bold tracking-widest text-gray-500 mb-6">
 							Begin your journey with codedamn
 						</h4>
-						<div className="w-full h-fit flex flex-col lg:flex-row justify-center items-center lg:pt-10 pb-20 lg:max-w-6xl">
+						<div className="w-full h-fit flex flex-col lg:flex-row justify-center items-center px-1 lg:pt-10 pb-20 lg:max-w-6xl">
 							<div className="relative h-fit lg:translate-x-5 lg:bg-white bg-opacity-75 bg-clip-padding lg:mt-0 lg:w-1/2">
 								<div className="absolute -inset-y-8 hidden lg:block -left-2 w-px bg-gray-900/20 [mask-image:linear-gradient(to_top,transparent,white_4rem,white_calc(100%-4rem),transparent)] sm:left-0"></div>
 								<div className="absolute w-full -inset-x-8 hidden lg:block top-0 h-px bg-gray-900/20 [mask-image:linear-gradient(to_right,transparent,white_4rem,white_calc(100%-4rem),transparent)]"></div>
