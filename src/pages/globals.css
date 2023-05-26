@@ -2,12 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body,
-#__next,
-main {
-	margin: 0;
+html {
 	height: auto;
+	width: 100%;
+	overflow-x: clip;
 }
 
 .bg-small-grid-lines {
@@ -44,45 +42,4 @@ main {
 			rgba(143, 143, 143, 0.1) 150px
 		);
 	background-size: 150px 150px;
-}
-
-.container {
-	overflow: hidden;
-	margin: 0 auto !important;
-	text-align: center;
-}
-
-.marquee-inner {
-	position: absolute;
-}
-
-.marquee-inner.to-top-1 {
-	animation: marqueeTop 20s linear infinite;
-}
-.marquee-inner.to-top-2 {
-	animation: marqueeTop 15s linear infinite;
-}
-.marquee-inner.to-top-3 {
-	animation: marqueeTop 25s linear infinite;
-}
-
-.marquee-inner.to-left {
-	animation: marqueeLeft 30s linear infinite;
-}
-@keyframes marqueeTop {
-	0% {
-		top: 0;
-	}
-	100% {
-		top: -100%;
-	}
-}
-
-@keyframes marqueeLeft {
-	0% {
-		left: 0;
-	}
-	100% {
-		left: -100%;
-	}
 }

@@ -1,4 +1,107 @@
-export function GoogleLogo() {
+import React, { useState, useEffect } from 'react'
+import { motion } from 'framer-motion'
+
+export default function TopCompaniesMarquee() {
+	const [isLessThanLg, setIsLessThanLg] = useState(false)
+
+	const companyLogosList = [
+		{
+			companyName: 'Google Logo',
+			companyLogo: <GoogleLogo />
+		},
+		{
+			companyName: 'Apple Logo',
+			companyLogo: <AppleLogo />
+		},
+		{
+			companyName: 'Meta Logo',
+			companyLogo: <MetaLogo />
+		},
+		{
+			companyName: 'Microsoft Logo',
+			companyLogo: <MicrosoftLogo />
+		},
+		{
+			companyName: 'Netflix Logo',
+			companyLogo: <NetflixLogo />
+		},
+		{
+			companyName: 'Amazon Logo',
+			companyLogo: <AmazonLogo />
+		},
+		{
+			companyName: 'Adobe Logo',
+			companyLogo: <AdobeLogo />
+		},
+		{
+			companyName: 'Notion Logo',
+			companyLogo: <NotionLogo />
+		}
+	]
+
+	useEffect(() => {
+		const checkWidth = () => {
+			const width = document.documentElement.clientWidth || document.body.clientWidth
+			setIsLessThanLg(width < 1024)
+		}
+
+		checkWidth()
+
+		const handleResize = () => {
+			checkWidth()
+		}
+
+		window.addEventListener('resize', handleResize)
+
+		return () => {
+			window.removeEventListener('resize', handleResize)
+		}
+	}, [])
+
+	return (
+		<div className="relative w-full text-center pt-12 pb-6 lg:pb-12 overflow-hidden bg-gradient-to-b from-transparent via-white/30 to-white">
+			<p className="font-bold text-sm px-4 uppercase tracking-wider mg:tracking-wider lg:tracking-widest text-gray-600 ">
+				Powering over 259K developers to land their dream job
+			</p>
+			<div className="relative w-full h-24 lg:h-48 max-w-full overflow-hidden [mask-image:radial-gradient(circle,white_80%,transparent_100%)]">
+				<div
+					className={`w-full h-full flex justify-between lg:justify-center lg:items-center lg:flex-col lg:my-6 mx-4`}
+				>
+					<motion.div
+						className="flex justify-center items-center w-fit lg:max-w-4xl lg:flex-wrap"
+						initial={isLessThanLg ? { x: 0 } : {}}
+						animate={isLessThanLg ? { x: '-100%' } : {}}
+						transition={
+							isLessThanLg ? { duration: 20, ease: 'linear', repeat: Infinity } : {}
+						}
+					>
+						{companyLogosList.map((company, index) => (
+							<span key={`${company.companyName}-${index}`} className="lg:my-6">
+								{company.companyLogo}
+							</span>
+						))}
+					</motion.div>
+					{isLessThanLg && (
+						<motion.div
+							className="flex justify-center items-center w-fit lg:max-w-4xl lg:flex-wrap lg:hidden"
+							initial={{ x: 0 }}
+							animate={isLessThanLg ? { x: '-100%' } : {}}
+							transition={{ duration: 20, ease: 'linear', repeat: Infinity }}
+						>
+							{companyLogosList.map((company, index) => (
+								<span key={`${company.companyName}-${index}`} className="lg:my-6">
+									{company.companyLogo}
+								</span>
+							))}
+						</motion.div>
+					)}
+				</div>
+			</div>
+		</div>
+	)
+}
+
+function GoogleLogo() {
 	return (
 		<svg
 			xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -17,7 +120,7 @@ export function GoogleLogo() {
 		</svg>
 	)
 }
-export function AppleLogo() {
+function AppleLogo() {
 	return (
 		<svg
 			xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -35,7 +138,7 @@ export function AppleLogo() {
 		</svg>
 	)
 }
-export function MetaLogo() {
+function MetaLogo() {
 	return (
 		<svg
 			xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -55,7 +158,7 @@ export function MetaLogo() {
 		</svg>
 	)
 }
-export function MicrosoftLogo() {
+function MicrosoftLogo() {
 	return (
 		<svg
 			xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -73,7 +176,7 @@ export function MicrosoftLogo() {
 		</svg>
 	)
 }
-export function NetflixLogo() {
+function NetflixLogo() {
 	return (
 		<svg
 			xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -91,7 +194,7 @@ export function NetflixLogo() {
 		</svg>
 	)
 }
-export function AmazonLogo() {
+function AmazonLogo() {
 	return (
 		<svg
 			xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -110,7 +213,7 @@ export function AmazonLogo() {
 		</svg>
 	)
 }
-export function AdobeLogo() {
+function AdobeLogo() {
 	return (
 		<svg
 			xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -128,7 +231,7 @@ export function AdobeLogo() {
 		</svg>
 	)
 }
-export function NotionLogo() {
+function NotionLogo() {
 	return (
 		<svg
 			xmlnsXlink="http://www.w3.org/1999/xlink"

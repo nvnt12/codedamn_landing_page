@@ -2,7 +2,7 @@ import { Popover, Transition } from '@headlessui/react'
 import { BiChevronDown } from 'react-icons/bi'
 import { Fragment } from 'react'
 
-const learningPaths = [
+export const learningPaths = [
 	{
 		name: 'Frontend Development',
 		description:
@@ -60,83 +60,85 @@ export default function LearnMenu() {
 							leaveTo="opacity-0 translate-y-1"
 						>
 							<Popover.Panel className="fixed inset-x-0 z-40 mt-[19px] sm:px-0 w-screen">
-								<div className="overflow-hidden shadow-lg border-y border-gray-200">
-									<div className="bg-white px-6 py-2">
-										<span className="flex items-center">
-											<span className="uppercase text-sm tracking-wide font-semibold text-gray-600 mt-8">
-												Interactive learning paths
+								<div className="overflow-hidden shadow-lg border-y bg-white border-gray-200 flex flex-col items-center">
+									<div className="bg-white px-6 py-2 w-full flex justify-center">
+										<div className="w-full max-w-screen-2xl">
+											<span className="flex items-center">
+												<span className="uppercase text-sm tracking-wide font-semibold text-gray-600 mt-8">
+													Interactive learning paths
+												</span>
 											</span>
-										</span>
-										<span className="block font-normal text-sm text-gray-600 mt-1">
-											Pick any learning path and get started immediately on
-											the developer skills you need.
-										</span>
+											<span className="block font-normal text-sm text-gray-600 mt-1">
+												Pick any learning path and get started immediately
+												on the developer skills you need.
+											</span>
+										</div>
 									</div>
-									<div className="relative grid gap-7 bg-white pt-4 pb-8 pl-4 pr-16 grid-cols-2 xl:grid-cols-4">
-										{learningPaths.map(item => (
+									<div className="relative grid gap-7 bg-white pt-4 pb-8 pl-4 pr-16 grid-cols-2 xl:grid-cols-4 max-w-screen-2xl">
+										{learningPaths.map((path, index) => (
 											<a
-												key={item.name}
+												key={`${path.name}-${index}`}
 												className=" flex rounded-lg py-3 px-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
 											>
 												<div className="flex h-10 w-10 shrink-0 items-center justify-center text-white sm:h-12 sm:w-12">
-													<item.icon aria-hidden="true" />
+													<path.icon aria-hidden="true" />
 												</div>
 												<div className="ml-4">
 													<p className="text-base font-medium text-gray-700">
-														{item.name}
+														{path.name}
 													</p>
 													<p className="text-sm font-normal leading-[23px] text-gray-500 mt-1">
-														{item.description}
+														{path.description}
 													</p>
 												</div>
 											</a>
 										))}
 									</div>
-									<div className="bg-gray-50 p-5 mx-auto flex w-full max-w-screen-2xl flex-wrap items-center gap-4 px-6 py-5 lg:px-8 [&_input]:min-w-[414px]">
-										<form className="relative md:px-3">
-											<input
-												id="search"
-												name="search"
-												className="block w-full rounded-md border border-gray-300 bg-white py-1 pl-3 pr-8 text-xs leading-5 placeholder-gray-500 focus:border-indigo-500 focus:placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-indigo-500 md:py-1.5 md:text-sm"
-												placeholder="Search across our catalog of 100+ interactive courses"
-												value=""
-											/>
-											<button
-												type="submit"
-												className="absolute inset-y-0 right-3 flex items-center px-3"
-											>
-												<svg
-													stroke="currentColor"
-													fill="currentColor"
-													strokeWidth="0"
-													viewBox="0 0 16 16"
-													className="h-3 w-3 text-gray-500"
-													aria-hidden="true"
-													height="1em"
-													width="1em"
-													xmlns="http://www.w3.org/2000/svg"
+									<div className="bg-gray-50 w-full">
+										<div className=" p-5 mx-auto flex w-full max-w-screen-2xl flex-wrap items-center gap-4 px-6 py-5 lg:px-8 [&_input]:min-w-[414px]">
+											<form className="relative md:px-3">
+												<input
+													name="search"
+													className="block w-full rounded-md border border-gray-300 bg-white py-1 pl-3 pr-8 text-xs leading-5 placeholder-gray-500 focus:border-indigo-500 focus:placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-indigo-500 md:py-1.5 md:text-sm"
+													placeholder="Search across our catalog of 100+ interactive courses"
+												/>
+												<button
+													type="submit"
+													className="absolute inset-y-0 right-3 flex items-center px-3"
 												>
-													<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
-												</svg>
-											</button>
-										</form>
-										<a href="#">
-											<button
-												type="button"
-												className="inline-flex min-w-max items-center gap-2 flex-shrink-0 border border-transparent font-semibold focus:outline-none rounded-lg px-3 py-2 text-sm shadow bg-indigo-600 text-white hover:bg-indigo-700"
-											>
-												Explore all courses
-											</button>
-										</a>
-										<span className="w-fit whitespace-nowrap text-sm text-gray-500 lg:ml-auto lg:text-base px-3">
-											Not sure where to begin?&nbsp;
-											<a
-												className="font-medium text-indigo-600 hover:text-indigo-700 hover:underline hover:underline-offset-2"
-												href="/career-path-quiz"
-											>
-												Take Quiz →
+													<svg
+														stroke="currentColor"
+														fill="currentColor"
+														strokeWidth="0"
+														viewBox="0 0 16 16"
+														className="h-3 w-3 text-gray-500"
+														aria-hidden="true"
+														height="1em"
+														width="1em"
+														xmlns="http://www.w3.org/2000/svg"
+													>
+														<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+													</svg>
+												</button>
+											</form>
+											<a href="#">
+												<button
+													type="button"
+													className="inline-flex min-w-max items-center gap-2 flex-shrink-0 border border-transparent font-semibold focus:outline-none rounded-lg px-3 py-2 text-sm shadow bg-indigo-600 text-white hover:bg-indigo-700"
+												>
+													Explore all courses
+												</button>
 											</a>
-										</span>
+											<span className="w-fit whitespace-nowrap text-sm text-gray-500 lg:ml-auto lg:text-base px-3">
+												Not sure where to begin?&nbsp;
+												<a
+													className="font-medium text-indigo-600 hover:text-indigo-700 hover:underline hover:underline-offset-2"
+													href="/career-path-quiz"
+												>
+													Take Quiz →
+												</a>
+											</span>
+										</div>
 									</div>
 								</div>
 							</Popover.Panel>

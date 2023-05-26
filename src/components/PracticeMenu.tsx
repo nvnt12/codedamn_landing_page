@@ -1,57 +1,58 @@
 import { Popover, Transition } from '@headlessui/react'
 import { BiChevronDown } from 'react-icons/bi'
 import { Fragment } from 'react'
+import Image from 'next/image'
 
 const projects = [
 	{
 		name: 'Build a Twitter clone',
 		description:
 			'A working social media app like twitter based on localStorage, React and JavaScript.',
-		imgUrl: 'project1Thumbnail.png'
+		imgUrl: '/project1Thumbnail.png'
 	},
 	{
 		name: 'Build a Markdown editor',
 		description: 'Build an Online Markdown Editor with vanilla JavaScript, HTML and CSS.',
-		imgUrl: 'project2Thumbnail.png'
+		imgUrl: '/project2Thumbnail.png'
 	}
 ]
 
 const playgrounds = [
 	{
 		name: 'HTML/CSS',
-		imgUrl: 'html-logo.png'
+		imgUrl: '/html-logo.png'
 	},
 	{
 		name: 'React',
-		imgUrl: 'react-logo.png'
+		imgUrl: '/react-logo.png'
 	},
 	{
 		name: 'Vue 3',
-		imgUrl: 'vue-logo.png'
+		imgUrl: '/vue-logo.png'
 	},
 	{
 		name: 'Solidity',
-		imgUrl: 'solidity-logo.png'
+		imgUrl: '/solidity-logo.png'
 	},
 	{
 		name: 'Python',
-		imgUrl: 'python-logo.png'
+		imgUrl: '/python-logo.png'
 	},
 	{
 		name: 'Java',
-		imgUrl: 'java-logo.png'
+		imgUrl: '/java-logo.png'
 	},
 	{
 		name: 'Golang',
-		imgUrl: 'golang-logo.png'
+		imgUrl: '/golang-logo.png'
 	},
 	{
 		name: 'Node.js',
-		imgUrl: 'node-logo.png'
+		imgUrl: '/node-logo.png'
 	},
 	{
 		name: 'C++',
-		imgUrl: 'cpp-logo.png'
+		imgUrl: '/cpp-logo.png'
 	}
 ]
 
@@ -80,8 +81,8 @@ export default function PracticeMenu() {
 							leaveTo="opacity-0 translate-y-1"
 						>
 							<Popover.Panel className="fixed inset-x-0 z-40 mt-[19px] sm:px-0 w-screen">
-								<div className="overflow-hidden shadow-lg border-y border-gray-200">
-									<div className="relative grid grid-cols-2 gap-8 bg-white p-6">
+								<div className="overflow-hidden shadow-lg border-y bg-white border-gray-200 flex flex-col items-center">
+									<div className="relative grid grid-cols-2 gap-8 bg-white p-6 max-w-screen-2xl">
 										<div>
 											<div className="">
 												<span className="flex items-center">
@@ -96,9 +97,9 @@ export default function PracticeMenu() {
 											</div>
 											<div className=" my-4 py-4 pr-10">
 												<ul role="list" className=" grid gap-8 grid-cols-2">
-													{projects.map(project => (
+													{projects.map((project, index) => (
 														<li
-															key={project.name}
+															key={`${project.name}-${index}`}
 															className="flow-root"
 														>
 															<a
@@ -106,10 +107,12 @@ export default function PracticeMenu() {
 																className="-m-3 p-3 flex flex-col rounded-lg hover:bg-gray-100 transition ease-in-out duration-150"
 															>
 																<div className="hidden sm:block flex-shrink-0">
-																	<img
+																	<Image
 																		className="w-40 h-[90px] object-cover rounded-md"
 																		src={project.imgUrl}
-																		alt="Blog Thumbnail"
+																		alt="Project Thumbnail"
+																		width={160}
+																		height={90}
 																	/>
 																</div>
 																<div className="min-w-0 flex-1 mt-3">
@@ -143,9 +146,9 @@ export default function PracticeMenu() {
 													role="list"
 													className=" grid gap-8 grid-cols-2 lg:grid-cols-3"
 												>
-													{playgrounds.map(playground => (
+													{playgrounds.map((playground, index) => (
 														<li
-															key={playground.name}
+															key={`${playground.name}-${index}`}
 															className="flow-root mb-2"
 														>
 															<a
@@ -153,10 +156,12 @@ export default function PracticeMenu() {
 																className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50 transition ease-in-out duration-150"
 															>
 																<div className="flex-shrink-0 text-gray-400">
-																	<img
+																	<Image
 																		className="w-8 h-8"
+																		width={32}
+																		height={32}
 																		src={playground.imgUrl}
-																		alt="Blog Thumbnail"
+																		alt="Playground Image"
 																	/>
 																</div>
 																<span className="ml-4 text-gray-600">
@@ -169,23 +174,25 @@ export default function PracticeMenu() {
 											</div>
 										</div>
 									</div>
-									<div className="bg-gray-50 mx-auto flex w-full max-w-screen-2xl flex-wrap items-center gap-4 p-5 [&_input]:min-w-[414px]">
-										<a href="##" className="">
-											<button
-												type="button"
-												className="inline-flex min-w-max items-center gap-2 flex-shrink-0 border border-transparent font-semibold focus:outline-none rounded-lg px-3 py-2 text-sm shadow bg-indigo-600 text-white hover:bg-indigo-700"
-											>
-												Explore all projects
-											</button>
-										</a>
-										<a href="##" className="">
-											<button
-												type="button"
-												className="inline-flex min-w-max items-center gap-2 flex-shrink-0 border border-transparent font-semibold focus:outline-none rounded-lg px-3 py-2 text-sm shadow bg-indigo-600 text-white hover:bg-indigo-700"
-											>
-												Explore all playgrounds
-											</button>
-										</a>
+									<div className="bg-gray-50 w-full">
+										<div className=" mx-auto flex w-full max-w-screen-2xl flex-wrap items-center gap-4 p-5 [&_input]:min-w-[414px]">
+											<a href="##" className="">
+												<button
+													type="button"
+													className="inline-flex min-w-max items-center gap-2 flex-shrink-0 border border-transparent font-semibold focus:outline-none rounded-lg px-3 py-2 text-sm shadow bg-indigo-600 text-white hover:bg-indigo-700"
+												>
+													Explore all projects
+												</button>
+											</a>
+											<a href="##" className="">
+												<button
+													type="button"
+													className="inline-flex min-w-max items-center gap-2 flex-shrink-0 border border-transparent font-semibold focus:outline-none rounded-lg px-3 py-2 text-sm shadow bg-indigo-600 text-white hover:bg-indigo-700"
+												>
+													Explore all playgrounds
+												</button>
+											</a>
+										</div>
 									</div>
 								</div>
 							</Popover.Panel>

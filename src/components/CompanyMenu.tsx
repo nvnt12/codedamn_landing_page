@@ -1,6 +1,7 @@
 import { Popover, Transition } from '@headlessui/react'
 import { BiChevronDown } from 'react-icons/bi'
 import { Fragment } from 'react'
+import Image from 'next/image'
 
 const company = [
 	{
@@ -49,13 +50,13 @@ const blogPosts = [
 		name: 'Top 10 data modeling tools for programmers (2023)',
 		description:
 			'Ever wondered how data actually represented in such a way that is more structured or easy to understand? Well...',
-		imgUrl: 'blogPost1.png'
+		imgUrl: '/blogPost1.png'
 	},
 	{
 		name: 'DynamoDB vs MongoDB: Which one to choose and why?',
 		description:
 			'Developers often debate the merits of using SQL vs NoSQL, on one hand, you have safety, security, and consistency while...',
-		imgUrl: 'blogPost2.png'
+		imgUrl: '/blogPost2.png'
 	}
 ]
 
@@ -84,12 +85,12 @@ export default function CompanyMenu() {
 							leaveFrom="opacity-100 translate-y-0"
 							leaveTo="opacity-0 -translate-y-1"
 						>
-							<Popover.Panel className="fixed inset-x-0 z-40 mt-[19px] sm:px-0 w-screen shadow-lg">
+							<Popover.Panel className="fixed inset-x-0 z-40 mt-[19px] sm:px-0 w-screen shadow-lg flex justify-center">
 								<div className="absolute inset-0 flex" aria-hidden="true">
 									<div className="bg-white w-1/2" />
 									<div className="bg-gray-50 w-1/2" />
 								</div>
-								<div className="relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2">
+								<div className="relative w-full max-w-screen-2xl grid grid-cols-1 lg:grid-cols-2">
 									<nav
 										className="grid gap-y-10 px-6 py-8 lg:py-10 bg-white sm:grid-cols-2 sm:gap-x-8 sm:py-12 xl:pr-12"
 										aria-labelledby="solutions-heading"
@@ -99,8 +100,11 @@ export default function CompanyMenu() {
 												Company
 											</h3>
 											<ul role="list" className="mt-5 space-y-6">
-												{company.map(item => (
-													<li key={item.name} className="flow-root">
+												{company.map((item, index) => (
+													<li
+														key={`${item.name}-${index}`}
+														className="flow-root"
+													>
 														<a
 															href="#"
 															className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50 transition ease-in-out duration-150"
@@ -121,17 +125,20 @@ export default function CompanyMenu() {
 												Resources
 											</h3>
 											<ul role="list" className="mt-5 space-y-6">
-												{resources.map(item => (
-													<li key={item.name} className="flow-root">
+												{resources.map((resource, index) => (
+													<li
+														key={`${resource.name}-${index}`}
+														className="flow-root"
+													>
 														<a
 															href="#"
 															className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50 transition ease-in-out duration-150"
 														>
 															<div className="flex-shrink-0 text-gray-400">
-																<item.icon aria-hidden="true" />
+																<resource.icon aria-hidden="true" />
 															</div>
 															<span className="ml-4 text-gray-600">
-																{item.name}
+																{resource.name}
 															</span>
 														</a>
 													</li>
@@ -145,16 +152,21 @@ export default function CompanyMenu() {
 												From the blog
 											</h3>
 											<ul role="list" className="mt-6 space-y-6">
-												{blogPosts.map(post => (
-													<li key={post.name} className="flow-root">
+												{blogPosts.map((post, index) => (
+													<li
+														key={`${post.name}-${index}`}
+														className="flow-root"
+													>
 														<a
 															href="#"
 															className="-m-3 p-3 flex rounded-lg hover:bg-gray-100 transition ease-in-out duration-150 pr-12"
 														>
 															<div className="hidden sm:block flex-shrink-0">
-																<img
+																<Image
 																	className="w-32 h-20 object-cover rounded-md"
 																	src={post.imgUrl}
+																	width={128}
+																	height={80}
 																	alt="Blog Thumbnail"
 																/>
 															</div>

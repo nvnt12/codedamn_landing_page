@@ -4,7 +4,7 @@ import LearnMenu from './LearnMenu'
 import PracticeMenu from './PracticeMenu'
 import CompanyMenu from './CompanyMenu'
 import { useState, useEffect } from 'react'
-import CompactMenu from './CompactMenu'
+import MobileMenu from './MobileMenu'
 
 export default function NavBar() {
 	const [animateHeader, setAnimateHeader] = useState(false)
@@ -22,18 +22,18 @@ export default function NavBar() {
 	}, [])
 
 	return (
-		<div className="inset-x-0 top-0 z-30 w-full  fixed">
-			<div
-				className={`flex justify-center items-center w-full sticky top-0 z-40 bg-white bg-opacity-5 ${
-					animateHeader &&
-					`bg-gradient-to-t from-white/95 via-gray-100/95 to-white/95 border-b border-b-gray-200`
-				}`}
-			>
-				<div className="mx-4 my-[11px] flex justify-between items-center w-full bg-transparent max-w-screen-2xl">
+		<div
+			className={`flex justify-center items-center w-full sticky top-0 z-30 bg-white bg-opacity-5 ${
+				animateHeader &&
+				`bg-gradient-to-t from-white/95 via-gray-100/95 to-white/95 border-b border-b-gray-200`
+			}`}
+		>
+			<div className="mx-4 my-[11px] flex justify-between items-center w-full bg-transparent max-w-screen-2xl">
+				<div className="flex items-center">
+					<span className="md:hidden mr-1">
+						<MobileMenu />
+					</span>
 					<Link className="flex items-center" href={'/'}>
-						<span className="md:hidden mr-1">
-							<CompactMenu />
-						</span>
 						<svg
 							className="mr-1"
 							height={28}
@@ -84,49 +84,49 @@ export default function NavBar() {
 							codedamn
 						</span>
 					</Link>
-					<div className="hidden items-center md:flex">
-						<Link
-							className="text-sm font-medium text-gray-600 mx-4 flex items-center hover:text-gray-900"
-							href={''}
+				</div>
+				<div className="hidden items-center md:flex">
+					<Link
+						className="text-sm font-medium text-gray-600 mx-4 flex items-center hover:text-gray-900"
+						href={''}
+					>
+						<LearnMenu />
+					</Link>
+					<Link
+						className="text-sm font-medium text-gray-600 mx-4 flex items-center hover:text-gray-900"
+						href={''}
+					>
+						<PracticeMenu />
+					</Link>
+					<Link
+						className="text-sm font-medium text-gray-600 mx-4 flex items-center hover:text-gray-900"
+						href={''}
+					>
+						<CompanyMenu />
+					</Link>
+					<Link
+						className="text-sm font-medium text-gray-600 mx-4 flex items-center hover:text-gray-900"
+						href={''}
+					>
+						Pricing
+					</Link>
+				</div>
+				<div className="flex items-center">
+					<Link
+						href={'/'}
+						className="text-sm font-medium text-gray-600 mr-3 hover:text-gray-900"
+					>
+						Login
+					</Link>
+					<Link href={'/'}>
+						<button
+							className={
+								' bg-indigo-600 hover:bg-indigo-700 py-[7px] px-[11px] text-white text-sm rounded-md font-semibold '
+							}
 						>
-							<LearnMenu />
-						</Link>
-						<Link
-							className="text-sm font-medium text-gray-600 mx-4 flex items-center hover:text-gray-900"
-							href={''}
-						>
-							<PracticeMenu />
-						</Link>
-						<Link
-							className="text-sm font-medium text-gray-600 mx-4 flex items-center hover:text-gray-900"
-							href={''}
-						>
-							<CompanyMenu />
-						</Link>
-						<Link
-							className="text-sm font-medium text-gray-600 mx-4 flex items-center hover:text-gray-900"
-							href={''}
-						>
-							Pricing
-						</Link>
-					</div>
-					<div className="flex items-center">
-						<Link
-							href={'/'}
-							className="text-sm font-medium text-gray-600 mr-3 hover:text-gray-900"
-						>
-							Login
-						</Link>
-						<Link href={'/'}>
-							<button
-								className={
-									' bg-indigo-600 hover:bg-indigo-700 py-[7px] px-[11px] text-white text-sm rounded-md font-semibold '
-								}
-							>
-								Get Started
-							</button>
-						</Link>
-					</div>
+							Get Started
+						</button>
+					</Link>
 				</div>
 			</div>
 		</div>
