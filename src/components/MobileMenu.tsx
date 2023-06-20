@@ -7,7 +7,7 @@ import { learningPaths } from './LearnMenu'
 
 const menuItems = [
 	'Pricing',
-	'Exlore Courses',
+	'Explore Courses',
 	'Build Projects',
 	'Boot playgrounds',
 	'Create Courses',
@@ -68,7 +68,7 @@ export default function MobileMenu() {
 														className="flow-root"
 													>
 														<a
-															href="#"
+															href=""
 															className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50 transition ease-in-out duration-150"
 														>
 															<div className="flex-shrink-0 text-gray-400">
@@ -115,7 +115,7 @@ export default function MobileMenu() {
 											Not sure where to begin?&nbsp;
 											<a
 												className="font-medium text-indigo-600 hover:text-indigo-700 hover:underline hover:underline-offset-2"
-												href="/career-path-quiz"
+												href=""
 											>
 												Take Quiz →
 											</a>
@@ -126,14 +126,14 @@ export default function MobileMenu() {
 											<a
 												key={`${item}-${index}`}
 												className="font-medium text-gray-950 hover:underline hover:underline-offset-2"
-												href="/career-path-quiz"
+												href=""
 											>
 												{item}
 											</a>
 										))}
 									</div>
 									<div className="p-4">
-										<a href="#">
+										<a href="">
 											<button
 												type="button"
 												className="w-full font-semibold focus:outline-none rounded-lg px-3 py-2 text-sm shadow bg-indigo-600 text-white hover:bg-indigo-800"
@@ -145,7 +145,7 @@ export default function MobileMenu() {
 											Already have an account?&nbsp;
 											<a
 												className="font-medium text-indigo-600 hover:text-indigo-700 hover:underline hover:underline-offset-2"
-												href="/career-path-quiz"
+												href=""
 											>
 												Login
 											</a>
@@ -154,14 +154,14 @@ export default function MobileMenu() {
 								</div>
 								<div className="flex items-center justify-evenly p-3 border-t">
 									<Link
-										href="#"
+										href=""
 										className="flex items-center text-gray-600 hover:text-gray-800"
 									>
 										<BsHeadphones className=" h-[18px] w-[18px] mr-2 shrink-0" />
 										<span className="font-medium ">Support</span>
 									</Link>
 									<Link
-										href="#"
+										href=""
 										className="flex items-center text-gray-600 hover:text-gray-800"
 									>
 										<svg

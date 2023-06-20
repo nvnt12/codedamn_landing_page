@@ -103,7 +103,7 @@ export default function PracticeMenu() {
 															className="flow-root"
 														>
 															<a
-																href="#"
+																href=""
 																className="-m-3 p-3 flex flex-col rounded-lg hover:bg-gray-100 transition ease-in-out duration-150"
 															>
 																<div className="hidden sm:block flex-shrink-0">
@@ -152,7 +152,7 @@ export default function PracticeMenu() {
 															className="flow-root mb-2"
 														>
 															<a
-																href="#"
+																href=""
 																className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50 transition ease-in-out duration-150"
 															>
 																<div className="flex-shrink-0 text-gray-400">
@@ -176,7 +176,7 @@ export default function PracticeMenu() {
 									</div>
 									<div className="bg-gray-50 w-full">
 										<div className=" mx-auto flex w-full max-w-screen-2xl flex-wrap items-center gap-4 p-5 [&_input]:min-w-[414px]">
-											<a href="##" className="">
+											<a href="" className="">
 												<button
 													type="button"
 													className="inline-flex min-w-max items-center gap-2 flex-shrink-0 border border-transparent font-semibold focus:outline-none rounded-lg px-3 py-2 text-sm shadow bg-indigo-600 text-white hover:bg-indigo-700"
@@ -184,7 +184,7 @@ export default function PracticeMenu() {
 													Explore all projects
 												</button>
 											</a>
-											<a href="##" className="">
+											<a href="" className="">
 												<button
 													type="button"
 													className="inline-flex min-w-max items-center gap-2 flex-shrink-0 border border-transparent font-semibold focus:outline-none rounded-lg px-3 py-2 text-sm shadow bg-indigo-600 text-white hover:bg-indigo-700"

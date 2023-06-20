@@ -81,7 +81,7 @@ export default function LearnMenu() {
 												className=" flex rounded-lg py-3 px-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
 											>
 												<div className="flex h-10 w-10 shrink-0 items-center justify-center text-white sm:h-12 sm:w-12">
-													<path.icon aria-hidden="true" />
+													<path.icon />
 												</div>
 												<div className="ml-4">
 													<p className="text-base font-medium text-gray-700">
@@ -121,7 +121,7 @@ export default function LearnMenu() {
 													</svg>
 												</button>
 											</form>
-											<a href="#">
+											<a href="">
 												<button
 													type="button"
 													className="inline-flex min-w-max items-center gap-2 flex-shrink-0 border border-transparent font-semibold focus:outline-none rounded-lg px-3 py-2 text-sm shadow bg-indigo-600 text-white hover:bg-indigo-700"
@@ -133,7 +133,7 @@ export default function LearnMenu() {
 												Not sure where to begin?&nbsp;
 												<a
 													className="font-medium text-indigo-600 hover:text-indigo-700 hover:underline hover:underline-offset-2"
-													href="/career-path-quiz"
+													href=""
 												>
 													Take Quiz →
 												</a>

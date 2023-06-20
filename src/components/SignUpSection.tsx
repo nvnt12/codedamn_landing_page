@@ -20,7 +20,7 @@ export default function SignUpSection() {
 					alt="Background Image"
 					width={1536}
 					height={864}
-					className="mx-auto aspect-[1155/678] h-auto max-w-screen-xl opacity-80"
+					className="mx-auto  h-auto max-w-screen-xl opacity-80"
 					priority
 				/>
 			</motion.div>
@@ -41,7 +41,7 @@ export default function SignUpSection() {
 					alt="Background Image"
 					width={1536}
 					height={864}
-					className="mx-auto aspect-[1155/678] h-auto max-w-screen-xl opacity-30"
+					className="mx-auto  h-auto max-w-screen-xl opacity-30"
 					priority
 				/>
 			</motion.div>
@@ -62,7 +62,7 @@ export default function SignUpSection() {
 					alt="Background Image"
 					width={1536}
 					height={864}
-					className="mx-auto aspect-[1155/678] h-auto max-w-screen-xl opacity-50"
+					className="mx-auto  h-auto max-w-screen-xl opacity-50"
 					priority
 				/>
 			</motion.div>
@@ -77,7 +77,7 @@ export default function SignUpSection() {
 							<div className="absolute -inset-y-8 hidden lg:block -left-2 w-px bg-gray-900/20 [mask-image:linear-gradient(to_top,transparent,white_4rem,white_calc(100%-4rem),transparent)] sm:left-0"></div>
 							<div className="absolute w-full -inset-x-8 hidden lg:block top-0 h-px bg-gray-900/20 [mask-image:linear-gradient(to_right,transparent,white_4rem,white_calc(100%-4rem),transparent)]"></div>
 							<div className="absolute w-full -inset-x-8 hidden lg:block bottom-0 h-px bg-gray-900/20 [mask-image:linear-gradient(to_right,transparent,white_4rem,white_calc(100%-4rem),transparent)]"></div>
-							<ul className="w-full flex lg:flex-col pb-8 lg:pb-0 lg:bg-white/70 ">
+							<ul className="w-full flex flex-col xxs:flex-row lg:flex-col pb-8 lg:pb-0 lg:bg-white/70 ">
 								<li className="w-full py-2 lg:py-4 px-2 lg:px-[42px]">
 									<h3 className="relative mb-2 block text-3xl font-bold uppercase tracking-tight">
 										<span className="relative z-10 bg-zinc-600 bg-clip-text text-transparent">

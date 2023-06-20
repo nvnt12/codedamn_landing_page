@@ -7,35 +7,35 @@ export default function TopCompaniesMarquee() {
 	const companyLogosList = [
 		{
 			companyName: 'Google Logo',
-			companyLogo: <GoogleLogo />
+			companyLogo: GoogleLogo
 		},
 		{
 			companyName: 'Apple Logo',
-			companyLogo: <AppleLogo />
+			companyLogo: AppleLogo
 		},
 		{
 			companyName: 'Meta Logo',
-			companyLogo: <MetaLogo />
+			companyLogo: MetaLogo
 		},
 		{
 			companyName: 'Microsoft Logo',
-			companyLogo: <MicrosoftLogo />
+			companyLogo: MicrosoftLogo
 		},
 		{
 			companyName: 'Netflix Logo',
-			companyLogo: <NetflixLogo />
+			companyLogo: NetflixLogo
 		},
 		{
 			companyName: 'Amazon Logo',
-			companyLogo: <AmazonLogo />
+			companyLogo: AmazonLogo
 		},
 		{
 			companyName: 'Adobe Logo',
-			companyLogo: <AdobeLogo />
+			companyLogo: AdobeLogo
 		},
 		{
 			companyName: 'Notion Logo',
-			companyLogo: <NotionLogo />
+			companyLogo: NotionLogo
 		}
 	]
 
@@ -77,7 +77,7 @@ export default function TopCompaniesMarquee() {
 					>
 						{companyLogosList.map((company, index) => (
 							<span key={`${company.companyName}-${index}`} className="lg:my-6">
-								{company.companyLogo}
+								<company.companyLogo />
 							</span>
 						))}
 					</motion.div>
@@ -90,7 +90,7 @@ export default function TopCompaniesMarquee() {
 						>
 							{companyLogosList.map((company, index) => (
 								<span key={`${company.companyName}-${index}`} className="lg:my-6">
-									{company.companyLogo}
+									<company.companyLogo />
 								</span>
 							))}
 						</motion.div>

@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# **Codedamn Landing Page by Nvnt**
 
-## Getting Started
+A replica of the frontend for the
+landing page of Codedamn website.
 
-First, run the development server:
+[![landing.nvnt.in](https://img.shields.io/website?color=yellow&logoColor=white&down_message=down&label=landing.nvnt.in&style=for-the-badge&up_color=yellow&up_message=up&url=https%3A%2F%2Fnvnt.in)](https://landing.nvnt.in)
 
-```bash
-npm run dev
-# or
-yarn dev
+## **Tech Stack**
+
+-   Next.js is used as the full stack React framework.
+    -   TailwindCSS is used for styling
+    -   Prettier Code Formatter is used for consistent code formatting
+    -   This project is hosted on Vercel
+    -   Typescript is used for advanced type-checking.
+
+## **Getting started**
+
+### Install [Node.js](https://nodejs.org/en) and clone the repository
+
+```shell
+git clone https://github.com/nvnt12/codedamn_landing_page.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Change into the project directory
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```shell
+cd codedamn_landing_page
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### Install any necessary dependencies
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```shell
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Run the project
 
-## Learn More
+To start the project in development mode, run:
 
-To learn more about Next.js, take a look at the following resources:
+```shell
+npm run dev
+```
 
--   [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
--   [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To start the project in production mode, run:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```shell
+npm run build
+npm run start
+```

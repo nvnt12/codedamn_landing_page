@@ -113,12 +113,12 @@ export default function NavBar() {
 				</div>
 				<div className="flex items-center">
 					<Link
-						href={'/'}
+						href={''}
 						className="text-sm font-medium text-gray-600 mr-3 hover:text-gray-900"
 					>
 						Login
 					</Link>
-					<Link href={'/'}>
+					<Link href={''}>
 						<button
 							className={
 								' bg-indigo-600 hover:bg-indigo-700 py-[7px] px-[11px] text-white text-sm rounded-md font-semibold '

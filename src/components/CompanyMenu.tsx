@@ -106,7 +106,7 @@ export default function CompanyMenu() {
 														className="flow-root"
 													>
 														<a
-															href="#"
+															href=""
 															className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50 transition ease-in-out duration-150"
 														>
 															<div className="flex-shrink-0 text-gray-400">
@@ -131,7 +131,7 @@ export default function CompanyMenu() {
 														className="flow-root"
 													>
 														<a
-															href="#"
+															href=""
 															className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50 transition ease-in-out duration-150"
 														>
 															<div className="flex-shrink-0 text-gray-400">
@@ -158,7 +158,7 @@ export default function CompanyMenu() {
 														className="flow-root"
 													>
 														<a
-															href="#"
+															href=""
 															className="-m-3 p-3 flex rounded-lg hover:bg-gray-100 transition ease-in-out duration-150 pr-12"
 														>
 															<div className="hidden sm:block flex-shrink-0">
@@ -185,7 +185,7 @@ export default function CompanyMenu() {
 										</div>
 										<div className="mt-6 text-sm font-medium">
 											<a
-												href="#"
+												href=""
 												className="text-indigo-600 hover:text-indigo-500 transition ease-in-out duration-150"
 											>
 												View the latest developer news&nbsp;
